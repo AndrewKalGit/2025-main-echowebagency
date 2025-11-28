@@ -30,7 +30,7 @@ export function LeadMagnetModal() {
       if (scrollPassed && !hasShown) {
         showModal()
       }
-    }, 15000)
+    }, 3500)
 
     // Check scroll position
     const handleScroll = () => {
