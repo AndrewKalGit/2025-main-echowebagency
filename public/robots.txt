@@ -1,0 +1,15 @@
+# Echo Web, LLC - robots.txt
+# This file controls how search engines crawl and index our website
+
+User-agent: *
+Allow: /
+
+# Disallow private/admin areas (add as needed)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Sitemap location
+Sitemap: https://echoweb.com/sitemap.xml
+
+# Crawl delay (optional, if needed to prevent server overload)
+# Crawl-delay: 1
