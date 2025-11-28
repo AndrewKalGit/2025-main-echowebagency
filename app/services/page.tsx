@@ -279,7 +279,7 @@ export default function ServicesPage() {
             </div>
             <div className="flex-1">
               <h2 className="text-4xl font-semibold text-[#2B3238]">Resource Pages & Mini Web Apps</h2>
-              <h3 className="text-2xl font-semibold text-[#2B3238]">(Generally for Onboarded Clients)</h2>
+              <h3 className="text-2xl font-semibold text-[#2B3238]">(Generally for Onboarded Clients)</h3>
               <p className="mt-4 text-lg font-medium text-[#2B3238]/70">
                 Interactive tools and calculators that provide value to visitors, build trust, and attract organic
                 backlinks.

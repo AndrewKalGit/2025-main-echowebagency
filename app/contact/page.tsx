@@ -58,6 +58,7 @@ export default function ContactPage() {
 
     const submissionPayload = {
       ...formData,
+       name: `${formData.firstName} ${formData.lastName}`.trim(),
       turnstileToken,
       // Auto-tracked data
       utmSource: new URLSearchParams(window.location.search).get("utm_source") || "direct",
