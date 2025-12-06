@@ -1,20 +1,12 @@
-import type { Metadata } from "next"
+"use client"
+
+import { useState } from "react"
 import Link from "next/link"
 import { ArrowRight, Filter } from "@/components/icons"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 
-export const metadata: Metadata = {
-  title: "Portfolio - Echo Web, LLC",
-  description: "Case studies and examples of our CRO-first web design and SEO work for service-based businesses.",
-  openGraph: {
-    title: "Portfolio - Echo Web, LLC",
-    description: "Case studies and examples of our CRO-first web design and SEO work.",
-    type: "website",
-  },
-}
-
-// Placeholder portfolio data
+// Portfolio data
 const portfolioItems = [
   {
     slug: "fitness-coach-website",
@@ -69,9 +61,15 @@ const portfolioItems = [
 const categories = ["All", "Landing Page", "Service Page", "Campaign", "Mini-Webapp"]
 
 export default function PortfolioPage() {
+  const [selectedCategory, setSelectedCategory] = useState("All")
+
+  const filteredItems =
+    selectedCategory === "All"
+      ? portfolioItems
+      : portfolioItems.filter((item) => item.category === selectedCategory)
+
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
 
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-[#F3F6F8] to-white py-20">
@@ -85,8 +83,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-
-      {/* Category Filters 
+      {/* Filter Category Section */}
       <section className="border-b border-[#F3F6F8] py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
@@ -98,8 +95,11 @@ export default function PortfolioPage() {
               {categories.map((category) => (
                 <button
                   key={category}
+                  onClick={() => setSelectedCategory(category)}
                   className={`rounded-2xl px-4 py-2 text-sm font-medium transition-colors ${
-                    category === "All" ? "bg-[#2EA8F7] text-white" : "bg-[#F3F6F8] text-[#2B3238] hover:bg-[#2EA8F7]/10"
+                    category === selectedCategory 
+                      ? "bg-[#2EA8F7] text-white" 
+                      : "bg-[#F3F6F8] text-[#2B3238] hover:bg-[#2EA8F7]/10"
                   }`}
                 >
                   {category}
@@ -109,17 +109,16 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
-       */}
 
       {/* Portfolio Grid */}
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {portfolioItems.map((project) => (
+            {filteredItems.map((project) => (
               <Link
                 key={project.slug}
                 href={`/portfolio/${project.slug}`}
-                className="group overflow-hidden rounded-2xl bg-white shadow-lg transition-shadow hover:shadow-xl"
+                className="group overflow-hidden rounded-2xl bg-white shadow-lg transition-shadow border-1 border-gray-300 hover:shadow-xl"
               >
                 <div className="aspect-[4/3] overflow-hidden bg-[#F3F6F8]">
                   <img
@@ -169,6 +168,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Footer */}
+      <Footer />
     </div>
   )
 }

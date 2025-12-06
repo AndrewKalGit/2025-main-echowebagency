@@ -52,16 +52,16 @@ export default function ResourcesPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <SiteHeader />
-
-      {/* Hero Section */}
+     {/* Hero Section */}
       <section className="bg-gradient-to-b from-[#F3F6F8] to-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl font-semibold leading-tight text-[#2B3238] lg:text-6xl">Free Resources</h1>
-            <p className="mx-auto mt-6 max-w-2xl text-xl font-medium text-[#2B3238]/70">
-              Tools, templates, and checklists to help you build a high-converting website. Plus get 1 month free
-              hosting with any download.
+            <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-medium text-[#2B3238]/70">
+              Get 1 month free hosting with any download.
+            </h2>
+                 <p className="mx-auto mt-6 max-w-2xl text-lg font-medium text-[#2B3238]/70">
+              Tools, templates, and checklists to help you build a high-converting website. 
             </p>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function ResourcesPage() {
                 <Link
                   key={resource.slug}
                   href={`/lead-magnet/${resource.slug}`}
-                  className="group overflow-hidden rounded-2xl border-2 border-[#F3F6F8] bg-white p-8 shadow-lg transition-all hover:border-[#2EA8F7] hover:shadow-xl"
+                  className="group overflow-hidden rounded-2xl border-2 border-[#F3F6F8] bg-white p-8 shadow-lg border-1 border-gray-300 transition-all hover:border-[#2EA8F7] hover:shadow-xl"
                 >
                   <div className="flex items-start gap-6">
                     <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-[#2EA8F7]/10 transition-colors group-hover:bg-[#2EA8F7]">
@@ -137,8 +137,6 @@ export default function ResourcesPage() {
           </div>
         </div>
       </section>
-
-      <SiteFooter />
     </div>
   )
 }

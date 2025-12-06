@@ -379,12 +379,10 @@ export default function BookingPage() {
                   className="mt-2 h-9 w-full rounded-2xl border border-gray-300 bg-white px-4 text-base font-medium text-[#2B3238] shadow-sm focus:border-[#2EA8F7] focus:outline-none"
                 >
                   <option value="">What's your primary goal?</option>
-                  <option value="increase-leads">Increase Leads</option>
-                  <option value="boost-sales">Boost Sales</option>
-                  <option value="build-brand">Build Brand Awareness</option>
-                  <option value="improve-seo">Improve SEO</option>
-                  <option value="modernize-site">Modernize Website</option>
-                  <option value="other">Other</option>
+                  <option value="leads">Lead Gen</option>
+                  <option value="sales">Sales</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="seo">SEO</option>
                 </select>
               </div>
 
@@ -400,10 +398,10 @@ export default function BookingPage() {
                     className="mt-2 h-9 w-full rounded-2xl border border-gray-300 bg-white px-4 text-base font-medium text-[#2B3238] shadow-sm focus:border-[#2EA8F7] focus:outline-none"
                   >
                     <option value="">Select budget range...</option>
-                    <option value="2500-5000">$2,500 - $5,000</option>
-                    <option value="5000-10000">$5,000 - $10,000</option>
-                    <option value="10000-20000">$10,000 - $20,000</option>
-                    <option value="20000+">$20,000+</option>
+                    <option value="2500-5000">$5,000 - $10,000</option>
+                    <option value="5000-10000">$10,000 - $20,000</option>
+                    <option value="10000-20000">$20,000 - $30,000</option>
+                    <option value="20000+">$30,000+</option>
                   </select>
                 </div>
 
@@ -444,9 +442,9 @@ export default function BookingPage() {
                   className="mt-2 h-9 w-full rounded-2xl border border-gray-300 bg-white px-4 text-base font-medium text-[#2B3238] shadow-sm focus:border-[#2EA8F7] focus:outline-none"
                 >
                   <option value="">How urgent is this project?</option>
-                  <option value="urgent">Urgent (ASAP)</option>
-                  <option value="high">High (Within 1 month)</option>
-                  <option value="medium">Medium (1-3 months)</option>
+                  <option value="urgent">Urgent (1 month)</option>
+                  <option value="high">High (2 months)</option>
+                  <option value="medium">Medium (3 months)</option>
                   <option value="low">Low (3+ months)</option>
                 </select>
               </div>

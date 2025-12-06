@@ -220,7 +220,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       {relatedPosts.length > 0 && (
         <section className="bg-[#F3F6F8] py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-semibold text-[#2B3238]">Related articles</h2>
+            <h2 className="text-3xl font-semibold text-[#2B3238]">Related blogs</h2>
             <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {relatedPosts.map((relatedPost) => (
                 <Link

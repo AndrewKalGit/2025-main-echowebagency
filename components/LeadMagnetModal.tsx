@@ -24,7 +24,7 @@ export function LeadMagnetModal() {
     let timeoutPassed = false
     let scrollPassed = false
 
-    // Wait 15 seconds
+    // Wait 3.5 seconds
     const timer = setTimeout(() => {
       timeoutPassed = true
       if (scrollPassed && !hasShown) {
@@ -52,9 +52,11 @@ export function LeadMagnetModal() {
     }
   }, [hasShown])
 
+
+  // Change to true to always show the modal for production and testing
   const showModal = () => {
-    setIsOpen(true)
-    setHasShown(true)
+    setIsOpen(false)
+    setHasShown(false)
     sessionStorage.setItem("leadMagnetShown", "true")
   }
 
@@ -70,7 +72,7 @@ export function LeadMagnetModal() {
           <DialogTitle className="text-2xl font-semibold text-[#2B3238]">Free Website Starter Pack</DialogTitle>
           <DialogDescription className="text-base font-medium text-[#2B3238]/70">
             Get our comprehensive guide to building a high-converting website, plus 1 month of free hosting valued at
-            $150
+            $100
           </DialogDescription>
         </DialogHeader>
 
@@ -88,7 +90,7 @@ export function LeadMagnetModal() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#2EA8F7]">✓</span>
-                <span>1 month free hosting voucher (valued at $150)</span>
+                <span>1 month free hosting voucher (valued at $100)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#2EA8F7]">✓</span>

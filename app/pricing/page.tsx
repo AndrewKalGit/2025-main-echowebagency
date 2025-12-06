@@ -98,14 +98,14 @@ export default function PricingPage() {
                   <li className="flex items-start gap-3">
                     <CheckCircle className="h-4 w-4 flex-shrink-0 text-[#2EA8F7]" />
                     <span className="text-sm font-medium text-[#2B3238]/70">
-                      <strong className="font-semibold text-[#2B3238]">2 minor revisions</strong> included (text edits,
+                      <strong className="font-semibold text-[#2B3238]">3 minor revisions</strong> included (text edits,
                       color tweaks, image swaps)
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="h-4 w-4 flex-shrink-0 text-[#2EA8F7]" />
                     <span className="text-sm font-medium text-[#2B3238]/70">
-                      <strong className="font-semibold text-[#2B3238]">1 major revision</strong> included (layout
+                      <strong className="font-semibold text-[#2B3238]">2 major revision</strong> included (layout
                       changes, navigation restructure)
                     </span>
                   </li>
@@ -161,7 +161,7 @@ export default function PricingPage() {
             </div>
 
             {/* SEO Pricing */}
-            <div className="rounded-2xl border-2 border-[#F3F6F8] bg-white p-8 shadow-lg">
+            <div className="rounded-2xl border-2 border-gray-400 bg-white p-8 shadow-lg">
               <div className="flex items-start justify-between">
                 <div>
                   <h2 className="text-3xl font-semibold text-[#2B3238]">SEO Services</h2>
@@ -190,7 +190,7 @@ export default function PricingPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
-                    <span className="text-sm font-medium text-[#2B3238]/70">Monthly blog content (4-6 articles)</span>
+                    <span className="text-sm font-medium text-[#2B3238]/70">Monthly blog content (4-6 posts)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
@@ -274,7 +274,7 @@ export default function PricingPage() {
             </p>
           </div>
 
-          <div className="mx-auto mt-12 max-w-3xl rounded-2xl bg-white p-8 shadow-lg">
+          <div className="mx-auto mt-12 max-w-3xl rounded-2xl bg-white p-8 shadow-lg border-1 border-gray-300">
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="text-2xl font-semibold text-[#2B3238]">Monthly Maintenance Plan</h3>
@@ -388,8 +388,8 @@ export default function PricingPage() {
           </div>
 
           <div className="mx-auto mt-12 max-w-4xl">
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="rounded-2xl bg-white p-6 shadow-lg">
+            <div className="grid gap-10 justify-items-center md:grid-cols-2">
+              <div className="rounded-2xl bg-white p-6 shadow-lg border-1 border-gray-300 min-w-md">
                 <h3 className="text-lg font-semibold text-[#2B3238]">Response Times</h3>
                 <ul className="mt-4 space-y-3">
                   <li className="flex items-start gap-3">
@@ -422,7 +422,7 @@ export default function PricingPage() {
                 </ul>
               </div>
 
-              <div className="rounded-2xl bg-white p-6 shadow-lg">
+              <div className="rounded-2xl bg-white p-6 shadow-lg border-1 border-gray-300 min-w-md">
                 <h3 className="text-lg font-semibold text-[#2B3238]">Uptime Guarantee</h3>
                 <ul className="mt-4 space-y-3">
                   <li className="flex items-start gap-3">

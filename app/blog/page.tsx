@@ -67,7 +67,7 @@ export default function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-[#F3F6F8] transition-all hover:shadow-xl hover:ring-[#2EA8F7]/20"
+                className="group overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-[#F3F6F8] transition-all border-1 border-gray-300 hover:shadow-xl hover:ring-[#2EA8F7]/20"
               >
                 <div className="aspect-[4/3] overflow-hidden bg-[#F3F6F8]">
                   <img
@@ -103,10 +103,10 @@ export default function BlogPage() {
                 </div>
                 <input
                   type="text"
-                  placeholder="Search articles..."
+                  placeholder="Search blogs..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full rounded-full border-2 border-[#F3F6F8] bg-white py-3 pl-12 pr-4 text-base font-medium text-[#2B3238] placeholder:text-[#2B3238]/40 focus:border-[#2EA8F7] focus:outline-none focus:ring-2 focus:ring-[#2EA8F7]/20 transition-all"
+                  className="w-full rounded-full border-2 border-gray-400 bg-white py-3 pl-12 pr-4 text-base font-medium text-[#2B3238] placeholder:text-[#2B3238]/40 focus:border-[#2EA8F7] focus:outline-none focus:ring-2 focus:ring-[#2EA8F7]/20 transition-all"
                 />
               </div>
               <div className="mt-2 min-h-[20px]">
@@ -144,11 +144,11 @@ export default function BlogPage() {
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-semibold text-[#2B3238]">
-                {selectedTopic === "All" ? "All articles" : `${selectedTopic}`}
+                {selectedTopic === "All" ? "All blogs" : `${selectedTopic}`}
               </h2>
               {filteredPosts.length === 0 ? (
                 <div className="mt-8 rounded-2xl bg-white p-12 text-center shadow-md">
-                  <p className="text-lg font-medium text-[#2B3238]/70">No articles found matching your search.</p>
+                  <p className="text-lg font-medium text-[#2B3238]/70">No blogs found matching your search.</p>
                   <button
                     onClick={() => {
                       setSearchQuery("")
@@ -165,7 +165,7 @@ export default function BlogPage() {
                     <Link
                       key={post.slug}
                       href={`/blog/${post.slug}`}
-                      className="group overflow-hidden rounded-2xl bg-white shadow-md transition-shadow hover:shadow-lg"
+                      className="group overflow-hidden rounded-2xl bg-white shadow-md transition-shadow border-1 border-gray-300 hover:shadow-lg"
                     >
                       <div className="aspect-[16/9] overflow-hidden bg-[#F3F6F8]">
                         <img

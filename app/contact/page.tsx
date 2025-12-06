@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { sendLeadEmail } from "@/app/actions/send-email"
 import { getTurnstileConfig } from "@/app/actions/get-turnstile-config"
+import { Instagram } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -108,7 +109,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2">
             {/* Contact Form */}
-            <div>
+            <div className="border-gray-300 border-2 rounded-2xl p-8 shadow-lg">
               <h2 className="text-3xl font-semibold text-foreground">Send us a message</h2>
               <p className="mt-3 text-base font-medium text-muted-foreground">
                 Fill out the form below and we'll get back to you within 24 hours.
@@ -300,7 +301,7 @@ export default function ContactPage() {
                 </Link>
               </div>
 
-              <div className="rounded-2xl bg-card p-8 shadow-lg">
+              <div className="rounded-2xl bg-card p-8 shadow-lg border-2 border-gray-300">
                 <h3 className="text-2xl font-semibold text-foreground">Contact Information</h3>
                 <div className="mt-6 space-y-4">
                   <div className="flex items-center gap-3">
@@ -321,11 +322,11 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="rounded-2xl bg-card p-8 shadow-lg">
+              <div className="rounded-2xl bg-card p-8 shadow-lg border-2 border-gray-300">
                 <h3 className="text-2xl font-semibold text-foreground">Follow Us</h3>
                 <div className="mt-6 flex gap-4">
                   <a
-                    href="https://linkedin.com/company/echoweb"
+                    href="https://linkedin.com/company/echowebagency"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary text-foreground hover:bg-primary hover:text-white"
@@ -333,12 +334,12 @@ export default function ContactPage() {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://twitter.com/echoweb"
+                    href="https://instagram.com/echowebllc"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary text-foreground hover:bg-primary hover:text-white"
                   >
-                    <Twitter className="h-5 w-5" />
+                    <Instagram className="h-5 w-5" />
                   </a>
                 </div>
               </div>
@@ -346,7 +347,7 @@ export default function ContactPage() {
               <div className="rounded-2xl bg-primary/10 p-8">
                 <h3 className="text-xl font-semibold text-foreground">Response Time</h3>
                 <p className="mt-3 text-base font-medium text-muted-foreground">
-                  We typically respond to all inquiries within 24 hours during business days. For urgent matters, please
+                  We typically respond to all inquiries within 72 hours during business days. For urgent matters, please
                   mention it in your message.
                 </p>
               </div>
@@ -365,7 +366,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="mt-12 rounded-2xl bg-card p-8 shadow-lg">
+          <div className="mt-12 rounded-2xl bg-card p-8 shadow-lg border-2 border-gray-300">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-left text-lg font-semibold text-foreground">
@@ -395,8 +396,8 @@ export default function ContactPage() {
                   What's your revision policy?
                 </AccordionTrigger>
                 <AccordionContent className="text-base font-medium text-muted-foreground">
-                  Each project includes 2 rounds of minor revisions (copy changes, color adjustments, small layout
-                  tweaks) and 1 round of major revisions (significant design changes). Additional revisions are billed
+                  Each project includes 3 rounds of minor revisions (copy changes, color adjustments, small layout
+                  tweaks) and 2 round of major revisions (significant design changes). Additional revisions are billed
                   at $25 for minor changes and $100 for major changes. This ensures we're aligned early and keeps
                   projects on schedule.
                 </AccordionContent>
@@ -421,7 +422,7 @@ export default function ContactPage() {
                 <AccordionContent className="text-base font-medium text-muted-foreground">
                   Absolutely. With Full Handover, you own all code and can edit freely or hire any developer. We provide
                   complete documentation showing how everything works. With Managed Service, you can request content
-                  updates through our portal (included up to 5 requests/month at $150/month hosting fee).
+                  updates and we will handle it for you (included up to 5 requests/month at $100/month hosting fee).
                 </AccordionContent>
               </AccordionItem>
 
@@ -432,7 +433,7 @@ export default function ContactPage() {
                 <AccordionContent className="text-base font-medium text-muted-foreground">
                   SEO services are available for onboarded clients only and include: keyword research, on-page SEO
                   optimization, blog content strategy, local SEO setup, link building outreach, and monthly performance
-                  reports. Pricing starts at $1,500/month with a 6-month minimum commitment.
+                  reports. Pricing starts at $1,000/month with a 6-month minimum commitment.
                 </AccordionContent>
               </AccordionItem>
 

@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-
+import { use } from "react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { ArrowRight, Download, CheckCircle } from "@/components/icons"
@@ -22,8 +22,8 @@ async function sendLead(formValues: any) {
   }
 }
 
-export default function LeadMagnetPage({ params }: { params: { slug: string } }) {
-  const slug = params.slug
+export default function LeadMagnetPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params)
   const [isGated, setIsGated] = useState(true)
   const [formData, setFormData] = useState({
     firstName: "",
@@ -288,7 +288,6 @@ export default function LeadMagnetPage({ params }: { params: { slug: string } })
   // Ungated view - show download
   return (
     <div className="min-h-screen bg-white">
-      <SiteHeader />
 
       {/* Success & Download Section */}
       <section className="py-24">

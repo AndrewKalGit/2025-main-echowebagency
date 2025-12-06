@@ -51,7 +51,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-semibold text-[#2B3238]">4. Project Timeline & Revisions</h2>
                 <p className="mt-4">
                   Project timelines are estimates and may be affected by client responsiveness, content availability,
-                  and scope changes. Each project includes 2 rounds of minor revisions and 1 round of major revisions as
+                  and scope changes. Each project includes 3 rounds of minor revisions and 2 round of major revisions as
                   outlined in pricing. Additional revisions will be billed at $25 for minor changes and $100 for major
                   changes.
                 </p>

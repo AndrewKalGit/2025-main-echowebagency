@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import logo from "../public/vectorlogo.png"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -10,29 +11,28 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           <div>
             <Link href="/" className="flex items-center">
-              <Image src="/full-logo.png" alt="Echo Web" width={120} height={40} className="h-10 w-auto" />
+              <Image src={logo} alt="Echo Web" width={120} height={40} className="h-10 w-auto" />
             </Link>
             <p className="mt-4 text-sm font-medium text-muted-foreground">
-              Building organic revenue channels for businesses
+              Building organic revenue channels for businesses with websites that convert.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-foreground">Services</h3>
             <ul className="mt-4 space-y-2">
-                <Link href="/services" className="text-sm font-medium text-muted-foreground hover:text-primary">
-                 Organic Revenue Stream
-                </Link>
-               <Link href="/services" className="text-sm font-medium text-muted-foreground hover:text-primary">
-                  CRO
-                </Link>
               <li>
-                <Link href="/services" className="text-sm font-medium text-muted-foreground hover:text-primary">
+                <Link href="/services#cro" className="text-sm font-medium text-muted-foreground hover:text-primary">
                   Web Design & Development
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-sm font-medium text-muted-foreground hover:text-primary">
+                <Link href="/services#seo" className="text-sm font-medium text-muted-foreground hover:text-primary">
                   SEO
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#hosting" className="text-sm font-medium text-muted-foreground hover:text-primary">
+                  Hosting & Maintenance
                 </Link>
               </li>
             </ul>
@@ -51,9 +51,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-sm font-medium text-muted-foreground hover:text-primary">
+                {/* <Link href="/blog" className="text-sm font-medium text-muted-foreground hover:text-primary">
                   Blog
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>

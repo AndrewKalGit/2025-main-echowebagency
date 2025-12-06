@@ -31,7 +31,7 @@ export default function AboutPage() {
       {/* Company Story */}
       <section className="py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-card p-8 shadow-lg">
+          <div className="rounded-2xl bg-card p-8 shadow-lg border-gray-300 border-2">
             <h2 className="text-3xl font-semibold text-foreground">Our Story</h2>
             <div className="mt-6 space-y-4 text-base font-medium leading-relaxed text-muted-foreground">
               <p>
@@ -71,7 +71,7 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-2xl bg-card p-8 shadow-lg">
+            <div className="rounded-2xl bg-card p-8 shadow-lg border-gray-300 border-2">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
                 <TrendingUp className="h-6 w-6 text-primary" />
               </div>
@@ -82,7 +82,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="rounded-2xl bg-card p-8 shadow-lg">
+            <div className="rounded-2xl bg-card p-8 shadow-lg border-gray-300 border-2">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
                 <Target className="h-6 w-6 text-primary" />
               </div>
@@ -92,7 +92,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="rounded-2xl bg-card p-8 shadow-lg">
+            <div className="rounded-2xl bg-card p-8 shadow-lg border-gray-300 border-2">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
                 <Award className="h-6 w-6 text-primary" />
               </div>
@@ -102,7 +102,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="rounded-2xl bg-card p-8 shadow-lg">
+            <div className="rounded-2xl bg-card p-8 shadow-lg border-gray-300 border-2">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
                 <Users className="h-6 w-6 text-primary" />
               </div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-16 grid gap-8 lg:grid-cols-2">
-            <div className="rounded-2xl bg-card p-8 shadow-lg">
+            <div className="rounded-2xl bg-card p-8 shadow-lg border-gray-300 border-2">
               <div className="flex items-start gap-4">
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-primary/10">
                   <FileText className="h-6 w-6 text-primary" />
@@ -167,7 +167,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="rounded-2xl bg-card p-8 shadow-lg">
+            <div className="rounded-2xl bg-card p-8 shadow-lg border-gray-300 border-2">
               <div className="flex items-start gap-4">
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-primary/10">
                   <Award className="h-6 w-6 text-primary" />
@@ -230,7 +230,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="mt-12 rounded-2xl bg-card p-8 shadow-lg">
+          <div className="mt-12 rounded-2xl bg-card p-8 shadow-lg border-gray-300 border-2">
             <p className="text-base font-medium leading-relaxed text-muted-foreground">
               Echo Web is made up of developers, designers, and digital strategists who work together to build websites
               that actually perform. We keep our client roster intentionally small so we can dedicate real time and
@@ -247,7 +247,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="mt-8 rounded-2xl bg-card p-8 shadow-lg">
+          <div className="mt-8 rounded-2xl bg-card p-8 shadow-lg border-gray-300 border-2">
             <h3 className="text-2xl font-semibold text-foreground">Get in touch</h3>
             <p className="mt-3 text-base font-medium leading-relaxed text-muted-foreground">
               Feel free to call, text, email, or set up a call with us. We're happy to answer your questions and help
@@ -286,7 +286,7 @@ export default function AboutPage() {
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-2xl bg-background px-8 py-4 text-base font-semibold text-primary shadow-lg hover:bg-background/95"
+                className="inline-flex items-center gap-2 rounded-2xl bg-background px-8 py-4 text-base font-semibold text-primary shadow-lg border-gray-300 border-2 hover:bg-background/95"
               >
                 Contact us
                 <ArrowRight className="h-5 w-5" />

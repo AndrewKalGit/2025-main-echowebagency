@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import logo from "../public/vectorlogo.png"
 import { usePathname } from "next/navigation"
 
 export default function Header() {
@@ -13,11 +14,11 @@ export default function Header() {
   }
 
   return (
-    <header className="border-b border-border bg-background/80 backdrop-blur-sm sticky top-0 z-50">
+    <header className="rounded-xl border-b border-gray-300 bg-background/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center">
-            <Image src="/full-logo.png" alt="Echo Web" width={120} height={40} className="h-10 w-auto" />
+            <Image src={logo} alt="Echo Web" width={120} height={40} className="h-10 w-auto" />
           </Link>
           <nav className="hidden items-center gap-8 md:flex">
             <Link
@@ -52,6 +53,14 @@ export default function Header() {
             >
               Blog
             </Link>
+             {/* <Link
+              href="/resources"
+              className={`text-sm font-medium transition-colors ${
+                isActive("/resources") ? "text-primary" : "text-foreground hover:text-primary"
+              }`}
+            >
+              Resources
+            </Link> */}
             <Link
               href="/about"
               className={`text-sm font-medium transition-colors ${

@@ -104,8 +104,13 @@ export default async function PortfolioCaseStudy({ params }: { params: Promise<{
   return (
     <div className="min-h-screen bg-white">
       {/* JSON-LD Schema */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      {/* Hero Section */}
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+        >
+          {JSON.stringify(jsonLd)}
+        </script>
+        {/* Hero Section */}
       <section className="bg-gradient-to-b from-[#F3F6F8] to-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Link

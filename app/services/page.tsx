@@ -20,8 +20,8 @@ export default function ServicesPage() {
       <section className="bg-gradient-to-b from-secondary to-background py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl font-semibold leading-tight text-[#2B3238] lg:text-6xl">
-              Design + CRO-first websites
+            <h1 className="text-3xl font-semibold leading-tight text-[#2B3238] lg:text-6xl">
+              Create Revenue Funnels With SEO and Conversion Focused Web Design
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-xl font-medium text-[#2B3238]/70">
               Professional web services that transform visitors into revenue. No guesswork, just results.
@@ -29,7 +29,7 @@ export default function ServicesPage() {
             <div className="mt-8">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-2xl bg-[#2EA8F7] px-8 py-4 text-base font-semibold text-white shadow-lg hover:bg-[#2EA8F7]/90"
+                className="inline-flex items-center gap-2 rounded-2xl bg-[#2EA8F7] px-8 py-4 text-base font-semibold text-white shadow-lg border-1 border-gray-300 hover:bg-[#2EA8F7]/90"
               >
                 Book a consultation
                 <ArrowRight className="h-5 w-5" />
@@ -79,7 +79,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
-            <div className="rounded-2xl bg-white p-8 shadow-lg">
+            <div className="rounded-2xl bg-white p-8 shadow-lg border-1 border-gray-300">
               <h3 className="text-2xl font-semibold text-[#2B3238]">What's Included</h3>
               <ul className="mt-6 space-y-4">
                 <li className="flex items-start gap-3">
@@ -135,7 +135,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="space-y-8">
-              <div className="rounded-2xl bg-[#F3F6F8] p-8">
+              <div className="rounded-2xl bg-[#F3F6F8] p-8 border-gray-300 border-2">
                 <h3 className="text-xl font-semibold text-[#2B3238]">Timeline</h3>
                 <p className="mt-3 text-base font-medium text-[#2B3238]/70">
                   Typical projects: <strong className="font-semibold text-[#2B3238]">2-4 weeks</strong> from kickoff to
@@ -146,7 +146,7 @@ export default function ServicesPage() {
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-[#F3F6F8] p-8">
+              <div className="rounded-2xl bg-[#F3F6F8] p-8 p-8 border-gray-300 border-2">
                 <h3 className="text-xl font-semibold text-[#2B3238]">Pricing</h3>
                 <p className="mt-3 text-base font-medium text-[#2B3238]/70">
                   Starting from <strong className="text-2xl font-semibold text-[#2EA8F7]">$5,000</strong>
@@ -183,7 +183,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
-            <div className="rounded-2xl bg-white p-8 shadow-lg">
+            <div className="rounded-2xl bg-white p-8 border-1 border-gray-300 shadow-lg border-1 border-gray-300">
               <h3 className="text-2xl font-semibold text-[#2B3238]">What's Included</h3>
               <ul className="mt-6 space-y-4">
                 <li className="flex items-start gap-3">
@@ -232,7 +232,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="space-y-8">
-              <div className="rounded-2xl bg-white p-8 shadow-lg">
+              <div className="rounded-2xl bg-white p-8 shadow-lg border-1 border-gray-300">
                 <h3 className="text-xl font-semibold text-[#2B3238]">Timeline</h3>
                 <p className="mt-3 text-base font-medium text-[#2B3238]/70">
                   SEO is ongoing: <strong className="font-semibold text-[#2B3238]">3-6 months</strong> to see
@@ -243,7 +243,7 @@ export default function ServicesPage() {
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-white p-8 shadow-lg">
+              <div className="rounded-2xl bg-white p-8 shadow-lg border-1 border-gray-300">
                 <h3 className="text-xl font-semibold text-[#2B3238]">Pricing</h3>
                 <p className="mt-3 text-base font-medium text-[#2B3238]/70">
                   Starting from <strong className="text-2xl font-semibold text-[#2EA8F7]">$1,000/month</strong>
@@ -288,7 +288,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
-            <div className="rounded-2xl bg-white p-8 shadow-lg">
+            <div className="rounded-2xl bg-white p-8 shadow-lg border-1 border-gray-300">
               <h3 className="text-2xl font-semibold text-[#2B3238]">What We Build</h3>
               <ul className="mt-6 space-y-4">
                 <li className="flex items-start gap-3">
@@ -330,7 +330,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="space-y-8">
-              <div className="rounded-2xl bg-[#F3F6F8] p-8">
+              <div className="rounded-2xl bg-[#F3F6F8] p-8 p-8 border-gray-300 border-2">
                 <h3 className="text-xl font-semibold text-[#2B3238]">Timeline</h3>
                 <p className="mt-3 text-base font-medium text-[#2B3238]/70">
                   Simple tools: <strong className="font-semibold text-[#2B3238]">1-2 weeks</strong>
@@ -340,7 +340,7 @@ export default function ServicesPage() {
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-[#F3F6F8] p-8">
+              <div className="rounded-2xl bg-[#F3F6F8] p-8 p-8 border-gray-300 border-2">
                 <h3 className="text-xl font-semibold text-[#2B3238]">Pricing</h3>
                 <p className="mt-3 text-base font-medium text-[#2B3238]/70">
                   Starting from <strong className="text-2xl font-semibold text-[#2EA8F7]">$500</strong>
@@ -377,7 +377,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
-            <div className="rounded-2xl bg-white p-8 shadow-lg">
+            <div className="rounded-2xl bg-white p-8 shadow-lg border-1 border-gray-300">
               <h3 className="text-2xl font-semibold text-[#2B3238]">What's Included</h3>
               <ul className="mt-6 space-y-4">
                 <li className="flex items-start gap-3">
@@ -418,7 +418,7 @@ export default function ServicesPage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
                   <span className="text-base font-medium text-[#2B3238]/70">
-                    <strong className="font-semibold text-[#2B3238]">Content Updates:</strong> Minor text and image
+                    <strong className="font-semibold text-[#2B3238]">Content Updates:</strong> Text and image
                     updates (up to 2 hrs/month)
                   </span>
                 </li>
@@ -426,14 +426,14 @@ export default function ServicesPage() {
                   <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
                   <span className="text-base font-medium text-[#2B3238]/70">
                     <strong className="font-semibold text-[#2B3238]">Priority Support:</strong> Email support with
-                    24-hour response time
+                    48-hour response time
                   </span>
                 </li>
               </ul>
             </div>
 
             <div className="space-y-8">
-              <div className="rounded-2xl bg-white p-8 shadow-lg">
+              <div className="rounded-2xl bg-white p-8 shadow-lg border-1 border-gray-300">
                 <h3 className="text-xl font-semibold text-[#2B3238]">Pricing</h3>
                 <p className="mt-3 text-base font-medium text-[#2B3238]/70">
                   <strong className="text-2xl font-semibold text-[#2EA8F7]">$100/month</strong>
@@ -453,10 +453,10 @@ export default function ServicesPage() {
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-white p-6 shadow-lg">
-                <h4 className="font-semibold text-[#2B3238]">Need More Support?</h4>
+              <div className="rounded-2xl bg-white p-6 shadow-lg border-1 border-gray-300">
+                <h4 className="font-semibold text-[#2B3238]">Need Custom Support?</h4>
                 <p className="mt-2 text-sm font-medium text-[#2B3238]/70">
-                  Additional development hours available at $120/hr for feature additions and major updates
+                  Additional development hours available at $50/hr for feature additions and major updates (will be billed on agreed timeframes).
                 </p>
               </div>
             </div>
@@ -467,81 +467,82 @@ export default function ServicesPage() {
       {/* Comparison Table */}
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* <div className="mx-auto max-w-6xl">    */}
           <div className="text-center">
             <h2 className="text-4xl font-semibold text-[#2B3238]">How we compare</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-[#2B3238]/70">
+            <p className="mx-auto mt-4 max-w-2xl text-base font-medium text-[#2B3238]/70">
               The boutique agency advantage: personal attention without the agency price tag.
             </p>
           </div>
 
-          <div className="mt-16 overflow-hidden rounded-2xl border-2 border-[#F3F6F8] bg-white shadow-lg">
+          <div className="mt-16 overflow-hidden rounded-2xl border-2 border-[#F3F6F8] bg-white shadow-lg border-1 border-gray-400/80">
             <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
+                <table className="w-full">
+                <thead className="border-b border-gray-400">
                   <tr className="bg-[#F3F6F8]">
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#2B3238]">Feature</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-[#2B3238]">Freelancer</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
-                      Echo Web
-                    </th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-[#2B3238]">Big Agency</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-[#2B3238]">Feature</th>
+                  <th className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-semibold text-[#2B3238]">Freelancer</th>
+                  <th className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
+                  Echo Web
+                  </th>
+                  <th className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-semibold text-[#2B3238]">Big Agency</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#F3F6F8]">
                   <tr>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Starting Cost</td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">$500 - $2,000</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
-                      $5,000+
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">$10,000+</td>
+                  <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Starting Cost</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">$500 - $2,000</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
+                  $5,000+
+                  </td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">$10,000+</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Reliability</td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Variable</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">High</td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">High</td>
+                  <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Reliability</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Variable</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">High</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">High</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Speed</td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">1-4 weeks</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
-                      2-4 weeks
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">2-6 months</td>
+                  <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Speed</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">1-4 weeks</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
+                  2-4 weeks
+                  </td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">2-6 months</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Personalization</td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">High</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">High</td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Low</td>
+                  <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Personalization</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">High</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">High</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Low</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Revisions</td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Limited</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
-                      Unlimited (in scope)
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">2-3 rounds</td>
+                  <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Revisions</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Limited</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
+                  2-3 rounds
+                  </td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">2-3 rounds</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Code Quality</td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Variable</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
-                      Professional
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Professional</td>
+                  <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Work Quality</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Variable</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
+                  Professional
+                  </td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Professional</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Ongoing Support</td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Rare</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
-                      Included
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Extra cost</td>
+                  <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Ongoing Support</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Rare</td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
+                  Included
+                  </td>
+                  <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">Extra cost</td>
                   </tr>
                 </tbody>
-              </table>
+                </table>
             </div>
           </div>
         </div>
@@ -558,7 +559,7 @@ export default function ServicesPage() {
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-base font-semibold text-[#2EA8F7] shadow-lg hover:bg-white/95"
+                className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-base font-semibold text-[#2EA8F7] shadow-lg border-1 border-gray-300 hover:bg-white/95"
               >
                 Book a consultation
                 <ArrowRight className="h-5 w-5" />

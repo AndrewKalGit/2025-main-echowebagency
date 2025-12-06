@@ -71,12 +71,12 @@
   </url>
   
   <!-- Resources -->
-  <url>
+  <!-- <url>
     <loc>https://echoweb.com/resources</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
+  </url> -->
   
   <!-- 
     TODO: Add dynamic blog posts and portfolio case studies
