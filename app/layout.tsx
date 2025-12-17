@@ -13,8 +13,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Echo Web, LLC",
-  description: "Your Organic Online Revenue Stream",
-  generator: "v0.app",
+  description: "Digital Marketing Agency Specializing in SEO, Web Design, and Conversion Optimization.",
   verification: {
     google: process.env.NEXT_PUBLIC_GSC_VERIFICATION_CODE || "",
   },
