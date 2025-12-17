@@ -1,106 +1,539 @@
 [
   {
-    "slug": "seo-basics-for-small-business",
-    "title": "SEO Basics for Small Business Owners",
-    "excerpt": "Learn the fundamentals of SEO to grow your organic traffic.",
-    "content": "SEO doesn't have to be complicated. In this guide, we'll cover the essential strategies that small business owners can implement immediately to improve their organic search visibility and attract more qualified leads.",
+    "slug": "web-design-roi-calculator",
+    "title": "Calculate Your Website Redesign ROI",
+    "excerpt": "Use our calculator to estimate the return on investment for your website redesign project.",
+    "content": "Your website is more than just a digital brochure—it's a revenue-generating asset. But how do you know if investing in a redesign will actually pay off?\n\nIn this guide, we'll walk you through the exact framework we use to calculate ROI for our clients, plus give you access to our interactive calculator to run your own numbers.",
+    "sections": [
+      {
+        "heading": "Why Website ROI Matters",
+        "content": "Too many businesses treat their website as an expense rather than an investment. This mindset leads to underinvestment in one of your most important marketing channels.\n\nWhen you understand the true ROI potential of your website, you can make informed decisions about where to allocate your marketing budget. Our clients typically see a 300-500% ROI within the first year of a redesign.",
+        "keyPoint": "Website ROI Framework",
+        "image": "/placeholder.svg?height=400&width=800&text=ROI+Graph"
+      }
+    ],
     "author": "Echo Web Team",
-    "date": "2024-03-15",
-    "readingTime": "8 min read",
-    "tags": ["SEO", "Small Business", "Organic Traffic"],
-    "topic": "SEO",
-    "engagementScore": 92,
-    "image": "/placeholder.svg?height=400&width=800"
+    "date": "2024-03-20",
+    "readingTime": "10 min read",
+    "tags": ["ROI", "Web Design", "Business Strategy"],
+    "topic": "Business",
+    "engagementScore": 98,
+    "image": "/placeholder.svg?height=400&width=800&text=ROI+Calculator",
+    "recommended": true,
+    "interactive": {
+      "type": "calculator",
+      "component": "ROICalculator"
+    }
   },
   {
-    "slug": "cro-optimization-tips",
-    "title": "5 CRO Tips That Actually Work",
-    "excerpt": "Proven conversion rate optimization strategies for service businesses.",
-    "content": "Not all CRO advice is created equal. After analyzing hundreds of service business websites, we've identified five conversion optimization strategies that consistently deliver measurable results.",
+    "slug": "web-design-pricing-guide",
+    "title": "How Much Does a Professional Website Cost?",
+    "excerpt": "Interactive pricing calculator to estimate your website project investment.",
+    "content": "Website pricing can be confusing. Projects range from $1,000 to $100,000+ depending on complexity and features.\n\nUse our interactive calculator below to get a realistic estimate for your project based on the features and functionality you need.",
+    "sections": [
+      {
+        "heading": "What Affects Website Pricing",
+        "content": "Several factors influence website costs: design complexity, custom functionality, content management system, e-commerce features, and ongoing maintenance needs.\n\nUnderstanding these factors helps you budget appropriately and avoid surprise costs down the road.",
+        "keyPoint": "Pricing Factors"
+      }
+    ],
+    "author": "Echo Web Team",
+    "date": "2024-03-18",
+    "readingTime": "8 min read",
+    "tags": ["Pricing", "Web Design", "Budget"],
+    "topic": "Business",
+    "engagementScore": 95,
+    "image": "/placeholder.svg?height=400&width=800&text=Pricing+Guide",
+    "recommended": true,
+    "interactive": {
+      "type": "pricingCalculator",
+      "data": {
+        "title": "Website Pricing Calculator",
+        "description": "Select the features you need to get an estimated investment range",
+        "options": [
+          {
+            "id": "design",
+            "label": "Custom Design",
+            "basePrice": 3000,
+            "options": [
+              { "id": "responsive", "label": "Mobile Responsive Design", "price": 500 },
+              { "id": "animations", "label": "Advanced Animations", "price": 1000 }
+            ]
+          },
+          {
+            "id": "ecommerce",
+            "label": "E-commerce Functionality",
+            "basePrice": 5000,
+            "options": [
+              { "id": "payment", "label": "Payment Gateway Integration", "price": 1500 },
+              { "id": "inventory", "label": "Inventory Management", "price": 2000 }
+            ]
+          },
+          {
+            "id": "seo",
+            "label": "SEO Optimization",
+            "basePrice": 2000,
+            "options": [
+              { "id": "local", "label": "Local SEO Setup", "price": 800 },
+              { "id": "content", "label": "Content Strategy", "price": 1200 }
+            ]
+          },
+          {
+            "id": "maintenance",
+            "label": "Monthly Maintenance & Support",
+            "basePrice": 500
+          }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "Soltuions-Quiz",
+    "title": "Find Your Website's Biggest Opportunities",
+    "excerpt": "Take our interactive quiz to see how much you really know about SEO.",
+    "content": "Think you know SEO? Put your knowledge to the test with our comprehensive quiz covering everything from keyword research to technical optimization.\n\nWhether you're a beginner or experienced marketer, this quiz will help you identify gaps in your SEO knowledge.",
+    "sections": [
+      {
+        "heading": "Why SEO Knowledge Matters",
+        "content": "Understanding SEO fundamentals helps you make better marketing decisions, communicate effectively with agencies, and identify optimization opportunities.\n\nEven if you outsource SEO, knowing the basics ensures you're getting good value and can spot red flags.",
+        "keyPoint": "SEO Foundation"
+      }
+    ],
+    "author": "Echo Web Team",
+    "date": "2024-03-16",
+    "readingTime": "5 min read",
+    "tags": ["SEO", "Quiz", "Education"],
+    "topic": "SEO",
+  "engagementScore": 92,
+  "image": "/placeholder.svg?height=400&width=800&text=SEO+Quiz",
+  "recommended": true,
+  "interactive": {
+    "type": "quiz",
+    "data": {
+      "title": "Find Your Website's Biggest Opportunities",
+      "description": "Answer a few questions about your business to get a personalized action plan",
+      "questions": [
+        {
+          "question": "What challenges is your website currently facing?",
+          "subtitle": "Select all that apply",
+          "options": [
+            {
+              "label": "Not showing up in Google search results",
+              "value": "low_visibility",
+              "impact": ["seo", "technical_seo"]
+            },
+            {
+              "label": "Getting traffic but no leads/sales",
+              "value": "low_conversion",
+              "impact": ["conversion_optimization", "ux_design"]
+            },
+            {
+              "label": "Looks outdated or unprofessional",
+              "value": "poor_design",
+              "impact": ["ui_redesign", "branding"]
+            },
+            {
+              "label": "Hard to use on mobile devices",
+              "value": "mobile_issues",
+              "impact": ["ux_design", "technical_seo"]
+            },
+            {
+              "label": "Slow loading times",
+              "value": "performance",
+              "impact": ["technical_seo", "conversion_optimization"]
+            }
+          ]
+        },
+        {
+          "question": "What are your main business goals right now?",
+          "subtitle": "Select your top priorities",
+          "options": [
+            {
+              "label": "Get more phone calls and inquiries",
+              "value": "more_leads",
+              "impact": ["conversion_optimization", "seo"]
+            },
+            {
+              "label": "Rank higher in local search results",
+              "value": "local_ranking",
+              "impact": ["seo", "technical_seo"]
+            },
+            {
+              "label": "Build trust and credibility",
+              "value": "credibility",
+              "impact": ["ui_redesign", "branding"]
+            },
+            {
+              "label": "Improve user experience",
+              "value": "better_ux",
+              "impact": ["ux_design", "conversion_optimization"]
+            }
+          ]
+        },
+        {
+          "question": "What type of business do you run?",
+          "options": [
+            {
+              "label": "Local service business (plumber, lawyer, etc.)",
+              "value": "local_service",
+              "impact": ["seo", "conversion_optimization"]
+            },
+            {
+              "label": "E-commerce store",
+              "value": "ecommerce",
+              "impact": ["ux_design", "conversion_optimization"]
+            },
+            {
+              "label": "Professional services (consultant, agency, etc.)",
+              "value": "professional",
+              "impact": ["branding", "ui_redesign"]
+            },
+            {
+              "label": "Restaurant or hospitality",
+              "value": "hospitality",
+              "impact": ["seo", "ui_redesign"]
+            }
+          ]
+        }
+      ],
+      "solutions": {
+        "seo": {
+          "title": "Local SEO Optimization",
+          "description": "Get your business found by customers actively searching for your services in your area.",
+          "priority": "High",
+          "estimatedImpact": "+150-300% organic traffic",
+          "timeframe": "2-3 months to see results",
+          "features": [
+            "Google Business Profile optimization",
+            "Local keyword targeting and content strategy",
+            "Citation building and directory listings",
+            "Review generation system",
+            "Monthly ranking reports and optimization"
+          ]
+        },
+        "conversion_optimization": {
+          "title": "Conversion Rate Optimization",
+          "description": "Turn more of your website visitors into paying customers with strategic design and copy improvements.",
+          "priority": "High",
+          "estimatedImpact": "+50-200% conversion rate",
+          "timeframe": "1-2 months to implement",
+          "features": [
+            "Clear, compelling calls-to-action",
+            "Simplified contact and inquiry forms",
+            "Trust signals and social proof",
+            "Strategic placement of key information",
+            "A/B testing and ongoing improvements"
+          ]
+        },
+        "ux_design": {
+          "title": "UX/Mobile Optimization",
+          "description": "Create an intuitive, mobile-friendly experience that keeps visitors engaged and drives action.",
+          "priority": "Medium",
+          "estimatedImpact": "+40-80% mobile conversions",
+          "timeframe": "3-4 weeks to implement",
+          "features": [
+            "Mobile-first responsive design",
+            "Improved navigation and site structure",
+            "Faster page load times",
+            "Touch-friendly buttons and forms",
+            "Streamlined user journeys"
+          ]
+        },
+        "ui_redesign": {
+          "title": "Modern UI Design Refresh",
+          "description": "Update your website's look and feel to match modern standards and build instant credibility.",
+          "priority": "Medium",
+          "estimatedImpact": "+30-60% time on site",
+          "timeframe": "4-6 weeks to complete",
+          "features": [
+            "Contemporary, professional design",
+            "Custom imagery and graphics",
+            "Consistent branding throughout",
+            "Improved typography and readability",
+            "Visual hierarchy that guides attention"
+          ]
+        },
+        "technical_seo": {
+          "title": "Technical SEO & Performance",
+          "description": "Fix the technical issues holding your website back from ranking and converting.",
+          "priority": "Medium",
+          "estimatedImpact": "+25-50% search visibility",
+          "timeframe": "2-3 weeks to implement",
+          "features": [
+            "Site speed optimization",
+            "Mobile-friendliness improvements",
+            "Schema markup implementation",
+            "XML sitemap and robots.txt optimization",
+            "Security and SSL configuration"
+          ]
+        },
+        "branding": {
+          "title": "Brand Strategy & Messaging",
+          "description": "Develop a cohesive brand identity and messaging that resonates with your target audience.",
+          "priority": "Low",
+          "estimatedImpact": "+20-40% brand recognition",
+          "timeframe": "4-6 weeks to develop",
+          "features": [
+            "Brand positioning and messaging framework",
+            "Unique value proposition development",
+            "Visual identity guidelines",
+            "Tone of voice and content style guide",
+            "Customer avatar and targeting strategy"
+          ]
+        }
+      }
+    }
+  }
+},
+  {
+    "slug": "website-redesign-process",
+    "title": "The Complete Website Redesign Process",
+    "excerpt": "A step-by-step breakdown of our proven website redesign methodology.",
+    "content": "Redesigning a website is a significant investment. Understanding the process helps set expectations and ensures a successful outcome.\n\nWe've refined our process over hundreds of projects to deliver results on time and on budget.",
+    "sections": [
+      {
+        "heading": "Why Process Matters",
+        "content": "A structured process ensures nothing gets missed and keeps projects on track. It also provides clear milestones so you always know where you stand.\n\nOur process is designed to maximize collaboration while minimizing revisions and delays.",
+        "keyPoint": "Process Overview"
+      }
+    ],
+    "author": "Echo Web Team",
+    "date": "2024-03-14",
+    "readingTime": "7 min read",
+    "tags": ["Process", "Web Design", "Project Management"],
+    "topic": "Business",
+    "engagementScore": 88,
+    "image": "/placeholder.svg?height=400&width=800&text=Process+Diagram",
+    "interactive": {
+      "type": "processDiagram",
+      "data": {
+        "title": "Our 6-Step Website Redesign Process",
+        "description": "From discovery to launch and beyond",
+        "steps": [
+          {
+            "title": "Discovery & Strategy",
+            "description": "We audit your current site, analyze competitors, and define goals. This phase includes stakeholder interviews and user research to inform our strategy.",
+            "icon": "🔍"
+          },
+          {
+            "title": "Wireframing & Planning",
+            "description": "We create wireframes showing page layouts and user flows. This ensures we have a solid foundation before moving into design.",
+            "icon": "📐"
+          },
+          {
+            "title": "Design & Prototyping",
+            "description": "Our designers create high-fidelity mockups and interactive prototypes. We iterate based on your feedback until the design is perfect.",
+            "icon": "🎨"
+          },
+          {
+            "title": "Development",
+            "description": "We build your site using modern technologies and best practices. The site is developed responsively for all devices.",
+            "icon": "💻"
+          },
+          {
+            "title": "Testing & QA",
+            "description": "Rigorous testing across browsers and devices ensures everything works flawlessly before launch.",
+            "icon": "✅"
+          },
+          {
+            "title": "Launch & Optimization",
+            "description": "We launch your site and monitor performance. Post-launch optimization ensures you're getting maximum results.",
+            "icon": "🚀"
+          }
+        ],
+        "style": "horizontal"
+      }
+    }
+  },
+  {
+    "slug": "website-comparison-guide",
+    "title": "DIY vs Agency vs Freelancer: Website Options Compared",
+    "excerpt": "An honest comparison of different approaches to building your website.",
+    "content": "Choosing how to build your website is one of the most important decisions for your business. Each option has tradeoffs.\n\nThis comprehensive comparison helps you make an informed decision based on your budget, timeline, and needs.",
+    "sections": [
+      {
+        "heading": "Understanding Your Options",
+        "content": "You have three main options: build it yourself with a website builder, hire a freelancer, or work with an agency. Each has distinct advantages and limitations.\n\nThe right choice depends on your technical skills, budget, timeline, and long-term goals.",
+        "keyPoint": "Comparison Overview"
+      }
+    ],
+    "author": "Echo Web Team",
+    "date": "2024-03-12",
+    "readingTime": "9 min read",
+    "tags": ["Comparison", "Decision Making", "Web Design"],
+    "topic": "Business",
+    "engagementScore": 90,
+    "image": "/placeholder.svg?height=400&width=800&text=Website+Options",
+    "interactive": {
+      "type": "comparisonTable",
+      "data": {
+        "title": "Website Development Options Compared",
+        "description": "Compare features, costs, and outcomes across different approaches",
+        "columns": ["DIY Builder", "Freelancer", "Agency"],
+        "rows": [
+          {
+            "label": "Typical Cost",
+            "values": ["$0-500/yr", "$2,000-10,000", "$5,000-50,000+"]
+          },
+          {
+            "label": "Timeline",
+            "values": ["Days-Weeks", "Weeks-Months", "1-3 Months"]
+          },
+          {
+            "label": "Custom Design",
+            "values": [false, true, true]
+          },
+          {
+            "label": "Custom Functionality",
+            "values": [false, true, true]
+          },
+          {
+            "label": "Professional Strategy",
+            "values": [false, false, true],
+            "highlight": true
+          },
+          {
+            "label": "Ongoing Support",
+            "values": ["Limited", "Varies", "Included"]
+          },
+          {
+            "label": "SEO Optimization",
+            "values": ["Basic", "Varies", "Advanced"],
+            "highlight": true
+          },
+          {
+            "label": "Scalability",
+            "values": ["Limited", "Good", "Excellent"]
+          },
+          {
+            "label": "Quality Guarantee",
+            "values": [false, false, true]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "website-launch-checklist",
+    "title": "The Ultimate Website Launch Checklist",
+    "excerpt": "Don't launch your website until you've completed every item on this checklist.",
+    "content": "Launching a website without proper preparation is like opening a store without checking if the doors work. This checklist ensures you don't miss critical steps.\n\nWe've seen too many launches go wrong due to overlooked details. Use this checklist to launch with confidence.",
+    "sections": [
+      {
+        "heading": "Why Checklists Matter",
+        "content": "Even experienced developers miss things without a systematic checklist. A single missed item can cause security issues, broken functionality, or poor user experience.\n\nThis checklist is based on hundreds of successful launches. It covers everything from technical requirements to marketing preparation.",
+        "keyPoint": "Pre-Launch Essentials"
+      }
+    ],
     "author": "Echo Web Team",
     "date": "2024-03-10",
     "readingTime": "6 min read",
-    "tags": ["CRO", "Conversion", "Web Design"],
-    "topic": "Conversion",
-    "engagementScore": 88,
-    "image": "/placeholder.svg?height=400&width=800"
-  },
-  {
-    "slug": "website-performance-matters",
-    "title": "Why Website Performance Matters",
-    "excerpt": "Fast websites convert better - here's the data to prove it.",
-    "content": "Website speed isn't just about user experience - it directly impacts your conversion rate and revenue. We'll show you the data and explain how to optimize your site for maximum performance.",
-    "author": "Echo Web Team",
-    "date": "2024-03-05",
-    "readingTime": "7 min read",
-    "tags": ["Performance", "Web Design", "Technical"],
-    "topic": "Technical",
-    "engagementScore": 85,
-    "image": "/placeholder.svg?height=400&width=800"
-  },
-  {
-    "slug": "choosing-web-agency",
-    "title": "How to Choose the Right Web Agency",
-    "excerpt": "What to look for when hiring a web development partner.",
-    "content": "Choosing the right web agency can make or break your online presence. Learn the critical questions to ask and red flags to avoid when selecting your web development partner.",
-    "author": "Echo Web Team",
-    "date": "2024-02-28",
-    "readingTime": "10 min read",
-    "tags": ["Business", "Web Design", "Agency"],
-    "topic": "Business",
-    "engagementScore": 78,
-    "image": "/placeholder.svg?height=400&width=800"
-  },
-  {
-    "slug": "local-seo-service-businesses",
-    "title": "Local SEO for Service Businesses",
-    "excerpt": "Dominate local search results and attract nearby customers.",
-    "content": "Local SEO is one of the most cost-effective marketing strategies for service-based businesses. Learn how to optimize your online presence to appear when customers in your area search for your services.",
-    "author": "Echo Web Team",
-    "date": "2024-02-20",
-    "readingTime": "9 min read",
-    "tags": ["SEO", "Local", "Service Business"],
-    "topic": "SEO",
-    "engagementScore": 95,
-    "image": "/placeholder.svg?height=400&width=800"
-  },
-  {
-    "slug": "landing-page-best-practices",
-    "title": "Landing Page Best Practices for 2024",
-    "excerpt": "Design landing pages that convert visitors into customers.",
-    "content": "A well-designed landing page can dramatically increase your conversion rate. We'll break down the essential elements of high-performing landing pages and show you real examples.",
-    "author": "Echo Web Team",
-    "date": "2024-02-15",
-    "readingTime": "8 min read",
-    "tags": ["Landing Pages", "CRO", "Web Design"],
-    "topic": "Conversion",
-    "engagementScore": 90,
-    "image": "/placeholder.svg?height=400&width=800"
-  },
-  {
-    "slug": "content-strategy-seo",
-    "title": "Building a Content Strategy That Drives SEO",
-    "excerpt": "Create content that ranks and converts.",
-    "content": "Content strategy isn't about churning out blog posts - it's about creating valuable resources that attract your ideal customers and establish your authority. Here's how to do it right.",
-    "author": "Echo Web Team",
-    "date": "2024-02-10",
-    "readingTime": "11 min read",
-    "tags": ["Content", "SEO", "Strategy"],
-    "topic": "SEO",
-    "engagementScore": 82,
-    "image": "/placeholder.svg?height=400&width=800"
-  },
-  {
-    "slug": "mobile-first-design",
-    "title": "Why Mobile-First Design Matters",
-    "excerpt": "More than half your visitors are on mobile - design for them first.",
-    "content": "Mobile traffic now accounts for over 60% of web traffic. If your site isn't optimized for mobile, you're losing customers. Learn the mobile-first design principles that ensure great experiences on every device.",
-    "author": "Echo Web Team",
-    "date": "2024-02-05",
-    "readingTime": "7 min read",
-    "tags": ["Mobile", "Web Design", "UX"],
+    "tags": ["Checklist", "Launch", "Web Design"],
     "topic": "Technical",
     "engagementScore": 87,
-    "image": "/placeholder.svg?height=400&width=800"
+    "image": "/placeholder.svg?height=400&width=800&text=Launch+Checklist",
+    "interactive": {
+      "type": "checklist",
+      "data": {
+        "title": "Website Launch Checklist",
+        "description": "Complete all items before launching your site",
+        "categories": [
+          {
+            "name": "Technical Setup",
+            "items": [
+              "SSL certificate installed and working",
+              "All pages loading without errors",
+              "Forms tested and submitting correctly",
+              "404 error page created and styled",
+              "Website backup system configured",
+              "Analytics tracking installed",
+              "Search Console verified"
+            ]
+          },
+          {
+            "name": "Content & SEO",
+            "items": [
+              "All meta titles and descriptions written",
+              "Images optimized and have alt text",
+              "Internal linking structure complete",
+              "XML sitemap generated and submitted",
+              "Robots.txt file configured",
+              "Schema markup implemented",
+              "Page load speed optimized"
+            ]
+          },
+          {
+            "name": "Testing & Quality",
+            "items": [
+              "Tested on Chrome, Firefox, and Safari",
+              "Mobile responsiveness verified",
+              "All links checked and working",
+              "Contact forms sending emails properly",
+              "Privacy policy and terms updated",
+              "Cookie consent implemented (if required)",
+              "Accessibility standards met"
+            ]
+          },
+          {
+            "name": "Marketing & Launch",
+            "items": [
+              "Social media profiles updated",
+              "Email announcement prepared",
+              "Press release drafted (if applicable)",
+              "Google Business Profile updated",
+              "Domain redirects configured",
+              "Launch announcement scheduled",
+              "Team trained on CMS"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "seo-before-after-results",
+    "title": "Real SEO Results: Before & After Case Study",
+    "excerpt": "See the dramatic impact of professional SEO through interactive comparisons.",
+    "content": "Numbers don't lie. This case study shows the real impact of professional SEO services over a 6-month period.\n\nWe transformed a struggling local business website into a lead-generation powerhouse using proven SEO strategies.",
+    "sections": [
+      {
+        "heading": "The Challenge",
+        "content": "Our client, a local HVAC company, was getting fewer than 10 website visitors per month and zero leads from organic search.\n\nTheir website was technically sound but completely invisible to search engines. They needed a comprehensive SEO overhaul.",
+        "keyPoint": "Initial Situation"
+      }
+    ],
+    "author": "Echo Web Team",
+    "date": "2024-03-08",
+    "readingTime": "8 min read",
+    "tags": ["Case Study", "SEO", "Results"],
+    "topic": "SEO",
+    "engagementScore": 94,
+    "image": "/placeholder.svg?height=400&width=800&text=SEO+Results",
+    "recommended": true,
+    "interactive": {
+      "type": "beforeAfterSlider",
+      "data": {
+        "title": "Website Traffic: Before vs After SEO",
+        "description": "Slide to compare 6 months of SEO optimization",
+        "beforeImage": "/placeholder.svg?height=600&width=1000&text=Before+SEO+Traffic+Graph",
+        "afterImage": "/placeholder.svg?height=600&width=1000&text=After+SEO+Traffic+Graph",
+        "beforeLabel": "Before: 10 visitors/month",
+        "afterLabel": "After: 847 visitors/month"
+      }
+    },
+    "additionalInteractive": {
+      "type": "statsShowcase",
+      "data": {
+        "title": "6-Month SEO Results",
+        "description": "Key metrics that improved with our SEO strategy",
+        "stats": [
+          { "value": "8370", "suffix": "%", "label": "Organic Traffic Increase", "icon": "📈", "color": "#2EA8F7" },
+          { "value": "1", "label": "Google Rankings (Page 1)", "prefix": "#", "icon": "🏆", "color": "#2EA8F7" },
+          { "value": "47", "label": "Monthly Leads", "icon": "📧", "color": "#2EA8F7" },
+          { "value": "213", "suffix": "%", "label": "Conversion Rate Increase", "icon": "💰", "color": "#2EA8F7" }
+        ],
+        "layout": "grid"
+      }
+    }
   }
 ]

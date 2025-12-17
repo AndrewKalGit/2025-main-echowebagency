@@ -6,7 +6,6 @@ import { ArrowRight, Search, TrendingUp, Download } from "@/components/icons"
 import blogsData from "@/data/blogs.json"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
-import { get } from "http"
 
 export default function BlogPage() {
   const [searchQuery, setSearchQuery] = useState("")

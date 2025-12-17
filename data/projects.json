@@ -1,0 +1,208 @@
+[
+  {
+    "slug": "fitness-coach-website",
+    "title": "Fitness Coach Website",
+    "category": "Landing Page",
+    "client": "Personal Training Studio",
+    "industry": "Health & Fitness",
+    "year": "2024",
+    "image": "/placeholder.svg?height=600&width=1200&text=Fitness+Coach+Website",
+    "liveSite": "https://example.com",
+    "challenge": "The client had a basic website that wasn't generating leads. Despite having paid ads running, the conversion rate was under 2%. They needed a landing page that would turn traffic into consultation bookings.",
+    "solution": "We created a CRO-first landing page with clear value propositions, social proof, and strategic CTAs. The design emphasized before/after transformations and included a simplified booking flow.",
+    "process": {
+      "design": [
+        "Conducted competitor analysis of top-performing fitness landing pages",
+        "Created wireframes focused on conversion flow",
+        "Designed high-fidelity mockups with strong visual hierarchy",
+        "A/B tested two headline variations",
+        "Implemented mobile-first responsive design"
+      ],
+      "seo": [
+        "Keyword research targeting 'personal trainer [city]' and related terms",
+        "Optimized on-page SEO (title tags, meta descriptions, H1-H6 structure)",
+        "Implemented local business schema markup",
+        "Optimized Core Web Vitals for 95+ PageSpeed score",
+        "Set up Google Analytics 4 and conversion tracking"
+      ]
+    },
+    "results": [
+      {
+        "metric": "Conversion Rate",
+        "before": "1.8%",
+        "after": "6.2%",
+        "change": "+244%"
+      },
+      {
+        "metric": "Consultation Bookings",
+        "before": "12/month",
+        "after": "41/month",
+        "change": "+242%"
+      },
+      {
+        "metric": "Page Load Time",
+        "before": "4.2s",
+        "after": "1.1s",
+        "change": "-74%"
+      },
+      {
+        "metric": "Bounce Rate",
+        "before": "68%",
+        "after": "42%",
+        "change": "-38%"
+      }
+    ],
+    "techStack": [
+      "Next.js 15 (App Router)",
+      "React Server Components",
+      "TailwindCSS",
+      "TypeScript",
+      "Vercel hosting",
+      "Calendly integration",
+      "Google Analytics 4"
+    ],
+    "testimonial": {
+      "quote": "Echo Web completely transformed my online presence. The new landing page pays for itself every single month.",
+      "author": "Sarah Johnson",
+      "role": "Fitness Coach & Business Owner"
+    },
+    "featured": true
+  },
+  {
+    "slug": "ecommerce-store-redesign",
+    "title": "E-Commerce Store Redesign",
+    "category": "E-Commerce",
+    "client": "Online Boutique",
+    "industry": "Retail & Fashion",
+    "year": "2024",
+    "image": "/placeholder.svg?height=600&width=1200&text=E-Commerce+Store",
+    "liveSite": "https://example-store.com",
+    "challenge": "The store had decent traffic but poor conversion rates. Shopping cart abandonment was at 78%, and the mobile experience was particularly problematic with high bounce rates.",
+    "solution": "We redesigned the entire shopping experience with a mobile-first approach, streamlined checkout process, and implemented trust signals throughout. Added product filtering, quick view functionality, and optimized product pages for conversions.",
+    "process": {
+      "design": [
+        "Conducted user testing to identify friction points",
+        "Redesigned product pages with better imagery and clear CTAs",
+        "Simplified 5-step checkout to 2 steps",
+        "Added trust badges and security indicators",
+        "Implemented persistent shopping cart and wishlist"
+      ],
+      "seo": [
+        "Optimized product descriptions for long-tail keywords",
+        "Implemented product schema markup for rich snippets",
+        "Created SEO-optimized category structure",
+        "Improved site speed to sub-2 second load times",
+        "Set up enhanced e-commerce tracking in GA4"
+      ]
+    },
+    "results": [
+      {
+        "metric": "Cart Abandonment",
+        "before": "78%",
+        "after": "42%",
+        "change": "-46%"
+      },
+      {
+        "metric": "Mobile Conversions",
+        "before": "0.8%",
+        "after": "3.2%",
+        "change": "+300%"
+      },
+      {
+        "metric": "Average Order Value",
+        "before": "$47",
+        "after": "$68",
+        "change": "+45%"
+      },
+      {
+        "metric": "Organic Traffic",
+        "before": "2.1k/mo",
+        "after": "5.8k/mo",
+        "change": "+176%"
+      }
+    ],
+    "techStack": [
+      "Next.js 15",
+      "Shopify Storefront API",
+      "TailwindCSS",
+      "TypeScript",
+      "Stripe Payments",
+      "Vercel hosting",
+      "Klaviyo Email Marketing"
+    ],
+    "testimonial": {
+      "quote": "Our revenue has doubled since the redesign. The new site not only looks amazing but actually converts visitors into customers.",
+      "author": "Jessica Martinez",
+      "role": "Owner, Bella Boutique"
+    },
+    "featured": true
+  },
+  {
+    "slug": "law-firm-website",
+    "title": "Law Firm Website & SEO",
+    "category": "Professional Services",
+    "client": "Smith & Associates Law",
+    "industry": "Legal Services",
+    "year": "2023",
+    "image": "/placeholder.svg?height=600&width=1200&text=Law+Firm+Website",
+    "challenge": "The law firm had zero online presence and was relying entirely on referrals. They needed to establish credibility online and start generating qualified leads through organic search.",
+    "solution": "Built a professional, trustworthy website with practice area pages optimized for local search. Created an attorney bio section, case results page, and resource center with legal guides. Implemented comprehensive local SEO strategy.",
+    "process": {
+      "design": [
+        "Created professional brand identity and style guide",
+        "Designed practice area landing pages",
+        "Built attorney profile pages with expertise highlights",
+        "Added client intake forms with smart routing",
+        "Implemented accessibility features (WCAG 2.1 AA)"
+      ],
+      "seo": [
+        "Local SEO targeting practice areas in three counties",
+        "Created 20+ location + practice area landing pages",
+        "Optimized Google Business Profile",
+        "Built citations across 40+ legal directories",
+        "Implemented review generation system"
+      ]
+    },
+    "results": [
+      {
+        "metric": "Organic Leads",
+        "before": "0/month",
+        "after": "28/month",
+        "change": "New Channel"
+      },
+      {
+        "metric": "Google Rankings",
+        "before": "Not ranked",
+        "after": "12 keywords",
+        "change": "Page 1"
+      },
+      {
+        "metric": "Website Traffic",
+        "before": "0",
+        "after": "3.2k/mo",
+        "change": "New Traffic"
+      },
+      {
+        "metric": "Case Inquiries",
+        "before": "100% referral",
+        "after": "45% online",
+        "change": "+45%"
+      }
+    ],
+    "techStack": [
+      "Next.js 15",
+      "TailwindCSS",
+      "TypeScript",
+      "Vercel hosting",
+      "Formspree for forms",
+      "Google Analytics 4",
+      "Hotjar for UX insights"
+    ],
+    "testimonial": {
+      "quote": "We went from invisible online to receiving multiple qualified leads every week. The ROI has been exceptional.",
+      "author": "Robert Smith",
+      "role": "Managing Partner"
+    },
+    "featured": false
+  }
+]

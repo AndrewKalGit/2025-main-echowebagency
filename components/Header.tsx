@@ -11,6 +11,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
   const headerRef = useRef<HTMLElement>(null)
+  const servicesDropdownRef = useRef<HTMLDivElement>(null)
 
   const isActive = (path: string) => {
     if (path === "/") return pathname === "/"
@@ -19,6 +20,7 @@ export default function Header() {
 
   const closeMobileMenu = () => setMobileMenuOpen(false)
 
+  // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
@@ -35,6 +37,23 @@ export default function Header() {
     }
   }, [mobileMenuOpen])
 
+  // Close services dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (servicesDropdownRef.current && !servicesDropdownRef.current.contains(event.target as Node)) {
+        setServicesOpen(false)
+      }
+    }
+
+    if (servicesOpen) {
+      document.addEventListener("mousedown", handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [servicesOpen])
+
   return (
     <header ref={headerRef} className="rounded-lg mx-1 border-b border-gray-300 bg-background/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -45,9 +64,9 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 md:flex">
-            <div className="relative">
-              <Link
-                href="/services"
+            <div className="relative" ref={servicesDropdownRef}>
+              <button
+                onClick={() => setServicesOpen(!servicesOpen)}
                 onMouseEnter={() => setServicesOpen(true)}
                 className={`text-sm font-medium transition-colors flex items-center gap-1 ${
                   isActive("/services") ? "text-primary" : "text-foreground hover:text-primary"
@@ -65,7 +84,7 @@ export default function Header() {
                 >
                   <path d="M19 9l-7 7-7-7" />
                 </svg>
-              </Link>
+              </button>
               
               {servicesOpen && (
                 <div 
@@ -75,24 +94,28 @@ export default function Header() {
                 >
                   <Link
                     href="/services#design"
+                    onClick={() => setServicesOpen(false)}
                     className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-gray-100 hover:text-primary transition-colors"
                   >
                     Web Design
                   </Link>
                   <Link
                     href="/services#seo"
+                    onClick={() => setServicesOpen(false)}
                     className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-gray-100 hover:text-primary transition-colors"
                   >
                     SEO
                   </Link>
                   <Link
                     href="/services#hosting"
+                    onClick={() => setServicesOpen(false)}
                     className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-gray-100 hover:text-primary transition-colors"
                   >
                     Maintenance
                   </Link>
                   <Link
                     href="/outreach"
+                    onClick={() => setServicesOpen(false)}
                     className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-gray-100 hover:text-primary transition-colors"
                   >
                     Link Building (SEO)
