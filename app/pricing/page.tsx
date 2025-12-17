@@ -381,74 +381,74 @@ export default function PricingPage() {
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-4xl font-semibold text-[#2B3238]">Service Level Agreement</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-[#2B3238]/70">
-              What you can expect from our support and maintenance services.
-            </p>
+        <h2 className="text-4xl font-semibold text-[#2B3238]">Service Level Agreement</h2>
+        <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-[#2B3238]/70">
+          What you can expect from our support and maintenance services.
+        </p>
           </div>
 
           <div className="mx-auto mt-12 max-w-4xl">
-            <div className="grid gap-10 justify-items-center md:grid-cols-2">
-              <div className="rounded-2xl bg-white p-6 shadow-lg border-1 border-gray-300 min-w-md">
-                <h3 className="text-lg font-semibold text-[#2B3238]">Response Times</h3>
-                <ul className="mt-4 space-y-3">
-                  <li className="flex items-start gap-3">
-                    <Clock className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
-                    <div>
-                      <p className="text-sm font-semibold text-[#2B3238]">Emergency Issues</p>
-                      <p className="mt-1 text-sm font-medium text-[#2B3238]/70">
-                        Site down or critical errors: 4-hour response
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Clock className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
-                    <div>
-                      <p className="text-sm font-semibold text-[#2B3238]">Standard Support</p>
-                      <p className="mt-1 text-sm font-medium text-[#2B3238]/70">
-                        General questions and updates: 24-hour response
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Clock className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
-                    <div>
-                      <p className="text-sm font-semibold text-[#2B3238]">Content Changes</p>
-                      <p className="mt-1 text-sm font-medium text-[#2B3238]/70">
-                        Updates completed within 2-3 business days
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 shadow-lg border-1 border-gray-300 min-w-md">
-                <h3 className="text-lg font-semibold text-[#2B3238]">Uptime Guarantee</h3>
-                <ul className="mt-4 space-y-3">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
-                    <div>
-                      <p className="text-sm font-semibold text-[#2B3238]">99.9% Uptime</p>
-                      <p className="mt-1 text-sm font-medium text-[#2B3238]/70">Industry-leading hosting reliability</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
-                    <div>
-                      <p className="text-sm font-semibold text-[#2B3238]">24/7 Monitoring</p>
-                      <p className="mt-1 text-sm font-medium text-[#2B3238]/70">Automatic alerts for any downtime</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
-                    <div>
-                      <p className="text-sm font-semibold text-[#2B3238]">Quick Recovery</p>
-                      <p className="mt-1 text-sm font-medium text-[#2B3238]/70">Fast restoration from daily backups</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+        <div className="grid gap-6 md:gap-10 grid-cols-1 md:grid-cols-2">
+          <div className="rounded-2xl bg-white p-6 shadow-lg border-1 border-gray-300">
+            <h3 className="text-lg font-semibold text-[#2B3238]">Response Times</h3>
+            <ul className="mt-4 space-y-3">
+          <li className="flex items-start gap-3">
+            <Clock className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
+            <div>
+              <p className="text-sm font-semibold text-[#2B3238]">Emergency Issues</p>
+              <p className="mt-1 text-sm font-medium text-[#2B3238]/70">
+            Site down or critical errors: 4-hour response
+              </p>
             </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <Clock className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
+            <div>
+              <p className="text-sm font-semibold text-[#2B3238]">Standard Support</p>
+              <p className="mt-1 text-sm font-medium text-[#2B3238]/70">
+            General questions and updates: 24-hour response
+              </p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <Clock className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
+            <div>
+              <p className="text-sm font-semibold text-[#2B3238]">Content Changes</p>
+              <p className="mt-1 text-sm font-medium text-[#2B3238]/70">
+            Updates completed within 2-3 business days
+              </p>
+            </div>
+          </li>
+            </ul>
+          </div>
+
+          <div className="rounded-2xl bg-white p-6 shadow-lg border-1 border-gray-300">
+            <h3 className="text-lg font-semibold text-[#2B3238]">Uptime Guarantee</h3>
+            <ul className="mt-4 space-y-3">
+          <li className="flex items-start gap-3">
+            <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
+            <div>
+              <p className="text-sm font-semibold text-[#2B3238]">99.9% Uptime</p>
+              <p className="mt-1 text-sm font-medium text-[#2B3238]/70">Industry-leading hosting reliability</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
+            <div>
+              <p className="text-sm font-semibold text-[#2B3238]">24/7 Monitoring</p>
+              <p className="mt-1 text-sm font-medium text-[#2B3238]/70">Automatic alerts for any downtime</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
+            <div>
+              <p className="text-sm font-semibold text-[#2B3238]">Quick Recovery</p>
+              <p className="mt-1 text-sm font-medium text-[#2B3238]/70">Fast restoration from daily backups</p>
+            </div>
+          </li>
+            </ul>
+          </div>
+        </div>
           </div>
         </div>
       </section>
