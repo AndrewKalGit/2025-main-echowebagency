@@ -21,6 +21,44 @@ export const metadata: Metadata = {
     icon: "/icon.png",
     apple: "/apple-icon.png",
   },
+  openGraph: {
+    type: "website",
+    url: "https://echowebagency.com",
+    title: "Echo Web, LLC",
+    description: "Digital Marketing Agency Specializing in SEO, Web Design, and Conversion Optimization.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        type: "image/png",
+        alt: "Echo Web, LLC",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Echo Web, LLC",
+    description: "Digital Marketing Agency Specializing in SEO, Web Design, and Conversion Optimization.",
+    images: ["/og-image.png"],
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Echo Web, LLC",
+  },
+  other: {
+    "facebook:app_id": process.env.NEXT_PUBLIC_FACEBOOK_APP_ID || "",
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:locale": "en_US",
+    "og:site_name": "Echo Web, LLC",
+  },
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
 }
 
 export default function RootLayout({
