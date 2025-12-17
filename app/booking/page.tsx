@@ -155,7 +155,7 @@ export default function BookingPage() {
               </ul>
             </div>
 
-            <div className="mt-12 rounded-2xl bg-[#F3F6F8] p-8">
+            {/* <div className="mt-12 rounded-2xl bg-[#F3F6F8] p-8">
               <h3 className="text-xl font-semibold text-[#2B3238]">While you wait, check out these resources</h3>
               <div className="mt-6 space-y-3">
                 <Link
@@ -180,7 +180,7 @@ export default function BookingPage() {
                   <ArrowRight className="h-5 w-5 text-[#2EA8F7]" />
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -298,7 +298,7 @@ export default function BookingPage() {
                   <option value="landing-page">Landing Page</option>
                   <option value="seo">SEO (Onboarded Clients Only)</option>
                   <option value="full-website">Full Website</option>
-                  <option value="mini-webapp">Mini Web App / Calculator</option>
+                  <option value="mini-webapp">eCommerce</option>
                 </select>
               </div>
 
@@ -509,8 +509,8 @@ export default function BookingPage() {
           <div className="mt-8 rounded-2xl bg-[#F3F6F8] p-6">
             <p className="text-center text-sm font-medium text-[#2B3238]/70">
               Prefer to email us directly?{" "}
-              <a href="mailto:hello@echoweb.com" className="text-[#2EA8F7] underline">
-                hello@echoweb.com
+              <a href="mailto:contact@echowebagency.com" className="text-[#2EA8F7] underline">
+                contact@echowebagency.com
               </a>
             </p>
           </div>

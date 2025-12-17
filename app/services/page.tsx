@@ -50,10 +50,10 @@ export default function ServicesPage() {
             <a href="#seo" className="text-sm font-medium text-[#2EA8F7] hover:text-[#2EA8F7]/80">
               SEO Services
             </a>
-            <span className="text-[#2B3238]/30">•</span>
+            {/* <span className="text-[#2B3238]/30">•</span>
             <a href="#resources" className="text-sm font-medium text-[#2EA8F7] hover:text-[#2EA8F7]/80">
               Resource Pages
-            </a>
+            </a> */}
             <span className="text-[#2B3238]/30">•</span>
             <a href="#hosting" className="text-sm font-medium text-[#2EA8F7] hover:text-[#2EA8F7]/80">
               Hosting & Maintenance

@@ -47,21 +47,24 @@ export default function HomePage() {
   const portfolioHighlights = [
     {
       slug: "fitness-coach-website",
-      title: "Fitness Coach Revenue System",
+      title: "Fitness Clientele Building System",
       description: "Created a digital channel that consistently generates 240% more consultation bookings.",
       image: "/fitness-coach-website.jpg",
+      // Yoku
     },
     {
-      slug: "real-estate-agent-site",
-      title: "Real Estate Lead Generator",
-      description: "Built an organic channel that now delivers 10x more qualified leads every month.",
+      slug: "creative-media-production-group",
+      title: "Creative Media Production Group Growth",
+      description: "Transforemed their website that now brings in 4x more organic traffic every month.",
       image: "/real-estate-website-hero.png",
+      // Nathan
     },
     {
-      slug: "consulting-firm-redesign",
-      title: "Consulting Firm Growth Channel",
-      description: "Transformed their website into a revenue engine that positions them as industry leaders.",
-      image: "/consulting-firm-website.jpg",
+      slug: "boxing-training-client",
+      title: "Boxing Training Client Acquisition",
+      description: "Developed a website that drives a 150% increase in booked clients for boxing training services.",
+      image: "/boxing-training-website.jpg",
+      // Andrew (me)
     },
   ]
 
@@ -72,10 +75,10 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-white/25 p-10 rounded-3xl shadow-xl">
           <div className="text-center">
         <h1 className="text-balance text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-6xl">
-          Build an additional revenue or lead channel for your product or service
+          Optimize sales or lead generation for your product or service
         </h1>
-        <p className="mx-auto mt-8 max-w-2xl text-balance text-xl leading-relaxed text-muted-foreground">
-          We design and build systems using SEO and conversion-focused web design to generate an addtional stream of revenue or leads 
+        <p className="mx-auto mt-8 max-w-3xl text-balance text-xl leading-relaxed text-muted-foreground">
+          We design and build websites that work with your systems using SEO and conversion-focused designs to generate an optimize sales and leads generation 
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
@@ -137,7 +140,7 @@ export default function HomePage() {
               <div>
                 <h3 className="text-xl font-semibold text-foreground">Grow predictably</h3>
                 <p className="mt-3 leading-relaxed text-muted-foreground">
-                  No operational strain. We work your revenue channel, bringing in qualified leads while you
+                  No operational strain. We work your revenue channel, bringing in qualified leads and sales while you
                   focus on delivering your core service. 
                 </p>
               </div>
@@ -150,7 +153,7 @@ export default function HomePage() {
       <section className="bg-secondary/30 py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-4xl font-bold text-foreground">How we build your revenue channel</h2>
+            <h2 className="text-4xl font-bold text-foreground">How we optimize your products and services</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               We use design, strategy, UX, and SEO to create a system that attracts buyers and converts them into
               customers.
@@ -191,7 +194,7 @@ export default function HomePage() {
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-4xl font-bold text-foreground">Revenue channels we have built</h2>
+            <h2 className="text-4xl font-bold text-foreground">Websites We Have Optimized</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               Real businesses generating measurable revenue growth.
             </p>

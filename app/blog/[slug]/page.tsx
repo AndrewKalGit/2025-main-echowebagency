@@ -50,19 +50,19 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
     author: {
       "@type": "Organization",
       name: post.author,
-      url: "https://echoweb.com",
+      url: "https://echowebagency.com",
     },
     publisher: {
       "@type": "Organization",
       name: "Echo Web, LLC",
       logo: {
         "@type": "ImageObject",
-        url: "https://echoweb.com/logo.png",
+        url: "https://echowebagency.com/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://echoweb.com/blog/${slug}`,
+      "@id": `https://echowebagency.com/blog/${slug}`,
     },
   }
 

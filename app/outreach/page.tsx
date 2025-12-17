@@ -1,28 +1,95 @@
-import type { Metadata } from "next"
+"use client"
+
+import { useState } from "react"
 import Link from "next/link"
 import { ArrowRight, Mail, LinkIcon, TrendingUp, Target } from "@/components/icons"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
-
-export const metadata: Metadata = {
-  title: "SEO Outreach Services - Echo Web, LLC",
-  description:
-    "Professional SEO outreach and link building services for onboarded clients. Strategic partnerships that drive organic growth.",
-  openGraph: {
-    title: "SEO Outreach Services - Echo Web, LLC",
-    description: "Strategic SEO outreach and link building services.",
-    type: "website",
-  },
-}
 
 export default function OutreachPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus("idle")
+
+    const formData = new FormData(e.currentTarget)
+    
+    // Get form values
+    const name = formData.get("name") as string
+    const email = formData.get("email") as string
+    const website = formData.get("website") as string
+    const message = formData.get("message") as string
+
+    // Get current timestamp
+    const now = new Date()
+    const time = now.toLocaleString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+    })
+
+    // Prepare template params matching the email template
+    const templateParams = {
+      name: name,
+      email: email,
+      message: message,
+      time: time,
+      firstName: name.split(" ")[0] || name,
+      lastName: name.split(" ").slice(1).join(" ") || "",
+      businessName: "", // Not collected in this form
+      phone: "", // Not collected in this form
+      serviceType: "SEO Outreach",
+      businessModel: "", // Not collected in this form
+      appointmentStyle: "", // Not collected in this form
+      revenueStreamType: "", // Not collected in this form
+      serviceDescription: message,
+      budget: "", // Not collected in this form
+      timeline: "", // Not collected in this form
+      launchDate: "", // Not collected in this form
+      projectPriority: "", // Not collected in this form
+      mainGoal: "SEO & Link Building",
+      notes: `Website: ${website}\n\nOutreach Goals:\n${message}`,
+      utmSource: "", // Could be captured from URL params
+      utmMedium: "", // Could be captured from URL params
+      utmCampaign: "", // Could be captured from URL params
+      pageURL: window.location.href,
+      deviceType: /Mobile|Android|iPhone/i.test(navigator.userAgent) ? "Mobile" : "Desktop",
+      submittedAt: time,
+      leadQuality: "warm", // Default for outreach inquiries
+      revenueTier: "growth", // Default for SEO services
+    }
+
+    try {
+      // Dynamically import emailjs to avoid SSR issues
+      const emailjs = (await import("@emailjs/browser")).default
+
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_KEY!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      )
+
+      setSubmitStatus("success")
+      // Reset form
+      e.currentTarget.reset()
+    } catch (error) {
+      console.error("EmailJS error:", error)
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <div className="min-h-screen bg-white">
-      <SiteHeader />
-
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-[#F3F6F8] to-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -267,7 +334,7 @@ export default function OutreachPage() {
           </div>
 
           <div className="mt-12 rounded-2xl border border-gray-400 bg-white p-8 shadow-md">
-            <form action="/api/submit-lead" method="POST" className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Label htmlFor="name">Full Name *</Label>
                 <Input
@@ -316,11 +383,24 @@ export default function OutreachPage() {
                 />
               </div>
 
+              {submitStatus === "success" && (
+                <div className="rounded-lg bg-green-50 p-4 text-sm text-green-800">
+                  Thank you! Your outreach consultation request has been submitted successfully. We'll be in touch soon.
+                </div>
+              )}
+
+              {submitStatus === "error" && (
+                <div className="rounded-lg bg-red-50 p-4 text-sm text-red-800">
+                  There was an error submitting your request. Please try again or contact us directly.
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[#2EA8F7] px-8 py-4 text-base font-semibold text-white shadow-lg hover:bg-[#2EA8F7]/90"
+                disabled={isSubmitting}
+                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[#2EA8F7] px-8 py-4 text-base font-semibold text-white shadow-lg hover:bg-[#2EA8F7]/90 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Request Outreach Consultation
+                {isSubmitting ? "Sending..." : "Request Outreach Consultation"}
                 <ArrowRight className="h-5 w-5" />
               </button>
             </form>
@@ -337,8 +417,6 @@ export default function OutreachPage() {
           </div>
         </div>
       </section>
-
-      <SiteFooter />
     </div>
   )
 }

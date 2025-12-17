@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         success: false,
-        message: 'Failed to submit lead. Please try emailing us directly at hello@echoweb.com',
+        message: 'Failed to submit lead. Please try emailing us directly at contact@echowebagency.com',
         error: error instanceof Error ? error.message : 'Unknown error',
       },
       { status: 500 }

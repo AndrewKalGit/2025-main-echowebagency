@@ -9,8 +9,6 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { sendLeadEmail } from "@/app/actions/send-email"
-import { getTurnstileConfig } from "@/app/actions/get-turnstile-config"
 import { Instagram } from "lucide-react"
 
 export default function ContactPage() {
@@ -34,11 +32,6 @@ export default function ContactPage() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-  const [turnstileSiteKey, setTurnstileSiteKey] = useState("")
-
-  useEffect(() => {
-    getTurnstileConfig().then((config) => setTurnstileSiteKey(config.siteKey))
-  }, [])
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
@@ -49,42 +42,85 @@ export default function ContactPage() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    const turnstileToken = (window as any).turnstile?.getResponse()
+    // Get current timestamp
+    const now = new Date()
+    const time = now.toLocaleString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+    })
 
-    if (!turnstileToken) {
-      alert("Please complete the verification to submit the form.")
-      setIsSubmitting(false)
-      return
-    }
-
-    const submissionPayload = {
-      ...formData,
-       name: `${formData.firstName} ${formData.lastName}`.trim(),
-      turnstileToken,
-      // Auto-tracked data
+    // Prepare template params matching the email template
+    const templateParams = {
+      name: `${formData.firstName} ${formData.lastName}`.trim(),
+      email: formData.email,
+      message: formData.serviceDescription,
+      time: time,
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      businessName: formData.businessName,
+      phone: formData.phone,
+      serviceType: formData.serviceType,
+      businessModel: formData.businessModel,
+      appointmentStyle: formData.appointmentStyle,
+      revenueStreamType: formData.revenueStreamType,
+      serviceDescription: formData.serviceDescription,
+      budget: formData.budget,
+      timeline: formData.timeline,
+      launchDate: formData.launchDate,
+      projectPriority: formData.projectPriority,
+      mainGoal: formData.mainGoal,
+      notes: formData.notes,
       utmSource: new URLSearchParams(window.location.search).get("utm_source") || "direct",
       utmMedium: new URLSearchParams(window.location.search).get("utm_medium") || "none",
       utmCampaign: new URLSearchParams(window.location.search).get("utm_campaign") || "none",
       pageURL: window.location.href,
-      deviceType: navigator.userAgent,
-      submittedAt: new Date().toISOString(),
-      // Internal tags
+      deviceType: /Mobile|Android|iPhone/i.test(navigator.userAgent) ? "Mobile" : "Desktop",
+      submittedAt: time,
       leadQuality: "new",
       revenueTier: "starter",
-      formType: "contact",
     }
 
-    await sendLeadEmail(submissionPayload)
+    try {
+      // Dynamically import emailjs to avoid SSR issues
+      const emailjs = (await import("@emailjs/browser")).default
 
-    // Also send to API
-    await fetch("/api/submit-lead", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(submissionPayload),
-    })
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_KEY!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      )
 
-    setIsSubmitted(true)
-    setIsSubmitting(false)
+      setIsSubmitted(true)
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        businessName: "",
+        email: "",
+        phone: "",
+        serviceType: "",
+        businessModel: "",
+        appointmentStyle: "",
+        revenueStreamType: "",
+        serviceDescription: "",
+        mainGoal: "",
+        notes: "",
+        budget: "",
+        timeline: "",
+        launchDate: "",
+        projectPriority: "",
+      })
+    } catch (error) {
+      console.error("EmailJS error:", error)
+      alert("There was an error sending your message. Please try again or contact us directly.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -264,19 +300,10 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  {turnstileSiteKey && (
-                    <div
-                      className="cf-turnstile"
-                      data-sitekey={turnstileSiteKey}
-                      data-theme="light"
-                      data-size="invisible"
-                    />
-                  )}
-
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white shadow-lg ring-2 ring-primary/20 hover:bg-primary/90 disabled:opacity-50"
+                    className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white shadow-lg ring-2 ring-primary/20 hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                     <ArrowRight className="h-5 w-5" />
@@ -357,7 +384,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-secondary py-24">
+      <section className="py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-4xl font-semibold text-foreground">Frequently Asked Questions</h2>

@@ -1,15 +1,24 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, useEffect } from "react"
 import Link from "next/link"
 import { ArrowRight, Search, TrendingUp, Download } from "@/components/icons"
 import blogsData from "@/data/blogs.json"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import { get } from "http"
 
 export default function BlogPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedTopic, setSelectedTopic] = useState("All")
+  const [dateNowYear, setDateNowYear] = useState(0)
+  const [dateNowMonth, setDateNowMonth] = useState("")
+
+  useEffect(() => {
+    const now = new Date()
+    setDateNowYear(now.getFullYear())
+    setDateNowMonth(now.toLocaleString("default", { month: "long" }))
+  }, [])
 
   // Sort by recency first, then boost by engagement score for trending
   const trendingPosts = useMemo(() => {
@@ -60,7 +69,7 @@ export default function BlogPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2">
             <TrendingUp className="h-6 w-6 text-[#2EA8F7]" />
-            <h2 className="text-3xl font-semibold text-[#2B3238]">Trending now</h2>
+            <h2 className="text-3xl font-semibold text-[#2B3238]">Trending Now {dateNowMonth} {dateNowYear}</h2>
           </div>
           <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {trendingPosts.map((post) => (
@@ -93,7 +102,7 @@ export default function BlogPage() {
       </section>
 
       {/* Search and Filter */}
-      <section className="border-y border-[#F3F6F8] bg-[#F3F6F8]/50 py-8">
+      <section className="border-y border-[#F3F6F8] py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div className="flex-1 lg:max-w-md">
@@ -139,7 +148,7 @@ export default function BlogPage() {
       </section>
 
       {/* Main Content Area with Sidebar */}
-      <section className="bg-[#F3F6F8] py-16">
+      <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="lg:col-span-2">
@@ -201,7 +210,7 @@ export default function BlogPage() {
 
             {/* Sidebar */}
             <div className="space-y-8">
-              <div className="rounded-2xl bg-[#2EA8F7] p-8 text-white shadow-lg">
+              {/* <div className="rounded-2xl bg-[#2EA8F7] p-8 text-white shadow-lg">
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20">
                   <Download className="h-6 w-6 text-white" />
                 </div>
@@ -215,7 +224,7 @@ export default function BlogPage() {
                 >
                   Download Now
                 </Link>
-              </div>
+              </div> */}
 
               {/* Popular Tags */}
               <div className="rounded-2xl bg-white p-8 shadow-lg">

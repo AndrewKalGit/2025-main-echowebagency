@@ -83,7 +83,7 @@ export default function PricingPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
-                    <span className="text-sm font-medium text-[#2B3238]/70">Documented, maintainable code</span>
+                    <span className="text-sm font-medium text-[#2B3238]/70">Documented maintainable code, CMS, or website from builder</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
@@ -265,7 +265,7 @@ export default function PricingPage() {
         </div>
       </section>
       {/* Hosting & Maintenance */}
-      <section className="bg-[#F3F6F8] py-24">
+      <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-4xl font-semibold text-[#2B3238]">Hosting & Maintenance</h2>
@@ -354,7 +354,7 @@ export default function PricingPage() {
               </p>
             </div>
 
-            <div className="mt-8 rounded-2xl border-2 border-[#2EA8F7] bg-[#2EA8F7]/5 p-6">
+            {/* <div className="mt-8 rounded-2xl border-2 border-[#2EA8F7] bg-[#2EA8F7]/5 p-6">
               <div className="flex items-start gap-3">
                 <Zap className="h-5 w-5 flex-shrink-0 text-[#2EA8F7]" />
                 <div>
@@ -373,7 +373,7 @@ export default function PricingPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

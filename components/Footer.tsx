@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import logo from "../public/vectorlogo.png"
+import logo from "../public/logo.png"
+import { Mail, Phone } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -79,6 +80,19 @@ export default function Footer() {
                 <Link href="/privacy" className="text-sm font-medium text-muted-foreground hover:text-primary">
                   Privacy
                 </Link>
+              </li>
+              </ul>
+               <ul className="mt-5 space-y-2">
+               <li>
+                <a href="tel:7325957217" className="flex text-sm font-medium text-muted-foreground hover:text-primary">
+                 <Phone className="mr-2 h-4 w-4"/>
+                  Call
+                </a>
+              </li>
+               <li>
+                <a href="mailto:contact@echowebagency.com" className="flex text-sm font-medium text-muted-foreground hover:text-primary">
+                  <Mail className="mr-2 h-4 w-4"/>  Email
+                </a>
               </li>
             </ul>
           </div>
