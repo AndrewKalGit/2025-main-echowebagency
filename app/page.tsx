@@ -3,13 +3,13 @@ import Link from "next/link"
 import { ArrowRight, CheckCircle, Code, TrendingUp, Zap } from "@/components/icons"
 
 export const metadata: Metadata = {
-  title: "Echo Web,LLC | Build Organic Revenue Channels for Your Business",
+  title: "Echo Web,LLC | Digital Marketing Agency Specializing in SEO, Web Design, and Conversion Optimization.",
   description:
-    "Turn your website into a predictable revenue stream. We build and optimize digital channels that attract qualified buyers and convert them into sales.",
+    "Turn your website into a predictable revenue stream. We build and optimize websites to generate traffic and conversions.",
   openGraph: {
     title: "Echo Web, LLC | Build Organic Revenue Channels for Your Business",
     description:
-      "Turn your website into a predictable revenue stream. We build digital channels that attract qualified buyers and convert them into sales.",
+      "Turn your website into a predictable revenue stream. We build and optimize websites to generate traffic and conversions.",
     type: "website",
   },
 }
