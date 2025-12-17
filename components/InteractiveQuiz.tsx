@@ -223,7 +223,7 @@ export function InteractiveQuiz({ data }: QuizProps) {
     <div className="my-8 rounded-2xl bg-gradient-to-br from-[#F3F6F8] to-white p-8 shadow-xl">
       <div className="mb-6 flex items-center justify-between">
         <h3 className="text-2xl font-semibold text-[#2B3238]">{data.title}</h3>
-        <span className="rounded-full bg-[#2EA8F7] px-1 py-2 text-xs font-semibold text-white">
+        <span className="rounded-full bg-[#2EA8F7] px-4 py-1 text-sm font-semibold text-white">
           {currentQuestion + 1} / {data.questions.length}
         </span>
       </div>

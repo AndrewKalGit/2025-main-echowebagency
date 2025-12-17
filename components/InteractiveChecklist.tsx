@@ -1,138 +1,174 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
-interface PricingCalculatorProps {
+interface ChecklistProps {
   data: {
     title: string
     description: string
-    options: Array<{
-      id: string
-      label: string
-      basePrice: number
-      options?: Array<{
-        id: string
-        label: string
-        price: number
-      }>
+    categories: Array<{
+      name: string
+      items: string[]
     }>
   }
 }
 
-export function InteractiveChecklist({ data }: PricingCalculatorProps) {
-  const [selections, setSelections] = useState<Record<string, any>>({})
-
-  const calculateTotal = () => {
-    let total = 0
-    data.options.forEach((option) => {
-      if (selections[option.id]) {
-        total += option.basePrice
-        if (option.options) {
-          option.options.forEach((subOption) => {
-            if (selections[`${option.id}-${subOption.id}`]) {
-              total += subOption.price
-            }
-          })
-        }
-      }
-    })
-    return total
+export function InteractiveChecklist({ data }: ChecklistProps) {
+  // Safety checks
+  if (!data || !data.categories || !Array.isArray(data.categories)) {
+    console.error('Invalid checklist data:', data)
+    return null
   }
 
-  const formatCurrency = (num: number) => {
-    return new Intl.NumberFormat("en-US", {
-      style: "currency",
-      currency: "USD",
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0,
-    }).format(num)
+  const [checkedItems, setCheckedItems] = useState<{ [key: string]: boolean }>({})
+  const [progress, setProgress] = useState(0)
+
+  // Calculate total items
+  const totalItems = data.categories.reduce(
+    (sum, category) => sum + (category.items?.length || 0),
+    0
+  )
+
+  useEffect(() => {
+    const checkedCount = Object.values(checkedItems).filter(Boolean).length
+    setProgress(totalItems > 0 ? Math.round((checkedCount / totalItems) * 100) : 0)
+  }, [checkedItems, totalItems])
+
+  const toggleItem = (categoryIndex: number, itemIndex: number) => {
+    const key = `${categoryIndex}-${itemIndex}`
+    setCheckedItems((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }))
+  }
+
+  const isItemChecked = (categoryIndex: number, itemIndex: number) => {
+    return checkedItems[`${categoryIndex}-${itemIndex}`] || false
+  }
+
+  const getCategoryProgress = (categoryIndex: number) => {
+    const category = data.categories[categoryIndex]
+    if (!category?.items?.length) return 0
+    
+    const checkedInCategory = category.items.filter((_, itemIndex) =>
+      isItemChecked(categoryIndex, itemIndex)
+    ).length
+    return Math.round((checkedInCategory / category.items.length) * 100)
+  }
+
+  const resetChecklist = () => {
+    setCheckedItems({})
   }
 
   return (
     <div className="my-8 rounded-2xl bg-gradient-to-br from-[#F3F6F8] to-white p-8 shadow-xl">
-      <h3 className="text-2xl font-semibold text-[#2B3238]">{data.title}</h3>
-      <p className="mt-2 text-sm text-[#2B3238]/70">{data.description}</p>
+      <div className="mb-8">
+        <h3 className="text-2xl font-semibold text-[#2B3238]">{data.title}</h3>
+        <p className="mt-2 text-sm text-[#2B3238]/70">{data.description}</p>
 
-      <div className="mt-8 space-y-6">
-        {data.options.map((option) => (
-          <div key={option.id} className="rounded-xl bg-white p-6 shadow-md">
-            <label className="flex items-start gap-3">
-              <input
-                type="checkbox"
-                checked={selections[option.id] || false}
-                onChange={(e) =>
-                  setSelections((prev) => ({
-                    ...prev,
-                    [option.id]: e.target.checked,
-                  }))
-                }
-                className="mt-1 h-5 w-5 rounded border-gray-300 text-[#2EA8F7] focus:ring-[#2EA8F7]"
-              />
-              <div className="flex-1">
-                <div className="flex items-center justify-between">
-                  <span className="font-semibold text-[#2B3238]">
-                    {option.label}
-                  </span>
-                  <span className="font-bold text-[#2EA8F7]">
-                    {formatCurrency(option.basePrice)}
-                  </span>
-                </div>
-
-                {option.options && selections[option.id] && (
-                  <div className="mt-4 space-y-3 border-l-2 border-[#2EA8F7] pl-4">
-                    {option.options.map((subOption) => (
-                      <label
-                        key={subOption.id}
-                        className="flex items-center justify-between"
-                      >
-                        <div className="flex items-center gap-2">
-                          <input
-                            type="checkbox"
-                            checked={
-                              selections[`${option.id}-${subOption.id}`] ||
-                              false
-                            }
-                            onChange={(e) =>
-                              setSelections((prev) => ({
-                                ...prev,
-                                [`${option.id}-${subOption.id}`]:
-                                  e.target.checked,
-                              }))
-                            }
-                            className="h-4 w-4 rounded border-gray-300 text-[#2EA8F7] focus:ring-[#2EA8F7]"
-                          />
-                          <span className="text-sm text-[#2B3238]/80">
-                            {subOption.label}
-                          </span>
-                        </div>
-                        <span className="text-sm font-medium text-[#2EA8F7]">
-                          +{formatCurrency(subOption.price)}
-                        </span>
-                      </label>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </label>
+        {/* Overall Progress */}
+        <div className="mt-6">
+          <div className="flex items-center justify-between text-sm font-semibold text-[#2B3238]">
+            <span>Overall Progress</span>
+            <span>{progress}%</span>
           </div>
-        ))}
-      </div>
-
-      <div className="mt-8 rounded-xl bg-gradient-to-r from-[#2EA8F7] to-[#2EA8F7]/80 p-6 text-white">
-        <div className="flex items-center justify-between">
-          <div>
-            <div className="text-sm font-medium text-white/90">
-              Estimated Investment
-            </div>
-            <div className="mt-1 text-4xl font-bold">
-              {formatCurrency(calculateTotal())}
-            </div>
+          <div className="mt-2 h-3 w-full overflow-hidden rounded-full bg-white">
+            <div
+              className="h-full bg-[#2EA8F7] transition-all duration-300"
+              style={{ width: `${progress}%` }}
+            />
           </div>
-          <button className="rounded-xl bg-white px-6 py-3 font-semibold text-[#2EA8F7] hover:bg-white/95">
-            Get Started
-          </button>
         </div>
       </div>
+
+      {/* Categories */}
+      <div className="space-y-8">
+        {data.categories.map((category, categoryIndex) => {
+          // Safety check for category items
+          if (!category.items || !Array.isArray(category.items)) {
+            console.error('Invalid category items:', category)
+            return null
+          }
+
+          const categoryProgress = getCategoryProgress(categoryIndex)
+
+          return (
+            <div key={categoryIndex} className="rounded-xl bg-white p-6 shadow-md">
+              <div className="mb-4 flex items-center justify-between">
+                <h4 className="text-lg font-semibold text-[#2B3238]">
+                  {category.name}
+                </h4>
+                <span className="rounded-full bg-[#2EA8F7]/10 px-3 py-1 text-xs font-semibold text-[#2EA8F7]">
+                  {categoryProgress}%
+                </span>
+              </div>
+
+              <div className="space-y-3">
+                {category.items.map((item, itemIndex) => {
+                  const isChecked = isItemChecked(categoryIndex, itemIndex)
+
+                  return (
+                    <button
+                      key={itemIndex}
+                      onClick={() => toggleItem(categoryIndex, itemIndex)}
+                      className={`flex w-full items-start gap-3 rounded-lg border-2 p-3 text-left transition-all ${
+                        isChecked
+                          ? "border-[#2EA8F7] bg-[#2EA8F7]/5"
+                          : "border-gray-200 bg-white hover:border-[#2EA8F7]/50"
+                      }`}
+                    >
+                      <div
+                        className={`mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded border-2 transition-all ${
+                          isChecked
+                            ? "border-[#2EA8F7] bg-[#2EA8F7]"
+                            : "border-gray-300"
+                        }`}
+                      >
+                        {isChecked && (
+                          <svg
+                            className="h-3 w-3 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={3}
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                        )}
+                      </div>
+                      <span
+                        className={`flex-1 text-sm font-medium ${
+                          isChecked
+                            ? "text-[#2B3238]"
+                            : "text-[#2B3238]/80"
+                        }`}
+                      >
+                        {item}
+                      </span>
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+
+      {/* Reset Button */}
+      {progress > 0 && (
+        <div className="mt-8 text-center">
+          <button
+            onClick={resetChecklist}
+            className="rounded-xl border-2 border-[#2EA8F7] px-6 py-2 text-sm font-semibold text-[#2EA8F7] hover:bg-[#2EA8F7]/10"
+          >
+            Reset Checklist
+          </button>
+        </div>
+      )}
     </div>
   )
 }
