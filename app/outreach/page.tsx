@@ -241,7 +241,7 @@ export default function OutreachPage() {
           <div className="text-center">
             <h2 className="text-4xl font-semibold text-[#2B3238]">Sample outreach template</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-[#2B3238]/70">
-              Here's an example of how we approach outreach — personalized, valuable, and authentic.
+              Here's an example of how we approach outreach   personalized, valuable, and authentic.
             </p>
           </div>
 
@@ -263,7 +263,7 @@ export default function OutreachPage() {
                 you'd consider linking to it from your [relevant article].
               </p>
               <p className="mt-4 text-[#2B3238]/70">
-                Either way, keep up the great work on [their site] — I've subscribed to your newsletter and look forward
+                Either way, keep up the great work on [their site]   I've subscribed to your newsletter and look forward
                 to reading more.
               </p>
               <p className="mt-4 text-[#2B3238]/70">Best,</p>

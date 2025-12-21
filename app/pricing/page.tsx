@@ -142,7 +142,7 @@ export default function PricingPage() {
                   <li className="flex items-start gap-3">
                     <FileText className="h-4 w-4 flex-shrink-0 text-[#2B3238]/50" />
                     <span className="text-sm font-medium text-[#2B3238]/70">
-                      Typical timeline: <strong className="font-semibold text-[#2B3238]">2-4 weeks</strong> from kickoff
+                      Typical timeline: <strong className="font-semibold text-[#2B3238]">4-12 weeks</strong> from kickoff
                       to launch
                     </span>
                   </li>

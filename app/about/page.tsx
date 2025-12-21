@@ -36,13 +36,13 @@ export default function AboutPage() {
             <div className="mt-6 space-y-4 text-base font-medium leading-relaxed text-muted-foreground">
               <p>
                 Echo Web started in a Discord server. What began as helping friends and community members grow their
-                businesses online evolved into something bigger—a boutique agency dedicated to building
+                businesses online evolved into something bigger a boutique agency dedicated to building
                 revenue-generating websites for service-based businesses.
               </p>
               <p>
                 We're a small team of developers, designers, and digital strategy experts who genuinely care about your
                 success. We operate remotely via Google Meet and calls, working with clients across the country to
-                create websites that don't just look good—they bring in business.
+                create websites that don't just look good they bring in business.
               </p>
               <p>
                 Our approach is simple: we focus on what actually matters. No fluff, no corporate jargon, just real
@@ -52,7 +52,7 @@ export default function AboutPage() {
               <p>
                 Right now, we're a boutique operation that works with a limited number of clients at a time. That's
                 intentional. We want to give every project the attention it deserves. Our vision? To keep growing
-                thoughtfully, scale into a full agency, and help even more businesses succeed online—without losing the
+                thoughtfully, scale into a full agency, and help even more businesses succeed online without losing the
                 personal touch that makes us different.
               </p>
             </div>
@@ -280,7 +280,7 @@ export default function AboutPage() {
           <div className="text-center">
             <h2 className="text-4xl font-semibold text-primary-foreground">Let's talk about your website</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-primary-foreground/90">
-              We're here to help your business grow online. Reach out anytime—let's set up a consultation and explore
+              We're here to help your business grow online. Reach out anytime let's set up a consultation and explore
               your next digital revenue stream.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

@@ -138,7 +138,7 @@ export default function ServicesPage() {
               <div className="rounded-2xl bg-[#F3F6F8] p-8 border-gray-300 border-2">
                 <h3 className="text-xl font-semibold text-[#2B3238]">Timeline</h3>
                 <p className="mt-3 text-base font-medium text-[#2B3238]/70">
-                  Typical projects: <strong className="font-semibold text-[#2B3238]">2-4 weeks</strong> from kickoff to
+                  Typical projects: <strong className="font-semibold text-[#2B3238]">4-12 weeks</strong> from kickoff to
                   launch
                 </p>
                 <p className="mt-2 text-sm font-medium text-[#2B3238]/50">
@@ -507,7 +507,7 @@ export default function ServicesPage() {
                   <td className="px-6 py-4 text-sm font-medium text-[#2B3238]">Speed</td>
                   <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">1-4 weeks</td>
                   <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-semibold text-[#2EA8F7] bg-[#2EA8F7]/5">
-                  2-4 weeks
+                  4-12 weeks
                   </td>
                   <td className="border-b border-l border-gray-400 px-6 py-4 text-center text-sm font-medium text-[#2B3238]/70">2-6 months</td>
                   </tr>
