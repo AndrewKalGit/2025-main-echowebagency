@@ -165,7 +165,7 @@ export default function PricingPage() {
               <div className="flex items-start justify-between">
                 <div>
                   <h2 className="text-3xl font-semibold text-[#2B3238]">SEO Services</h2>
-                  <p className="mt-2 text-base font-medium text-[#2B3238]/70">For onboarded clients only</p>
+                  <p className="mt-2 text-base font-medium text-[#2B3238]/70">Build organic traffic through SEO</p>
                 </div>
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F3F6F8]">
                   <Zap className="h-6 w-6 text-[#2B3238]" />

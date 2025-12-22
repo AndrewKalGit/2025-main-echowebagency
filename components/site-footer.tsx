@@ -10,7 +10,7 @@ export function SiteFooter() {
               <div className="h-8 w-8 rounded-lg bg-[#2EA8F7]" />
               <span className="text-xl font-semibold text-white">Echo Web</span>
             </Link>
-            <p className="mt-4 text-sm font-medium text-white/70">Your Organic Online Revenue Stream</p>
+            <p className="mt-4 text-sm font-medium text-white/70">Your Online Revenue Stream</p>
           </div>
           <div>
             <h3 className="font-semibold text-white">Services</h3>

@@ -5,10 +5,10 @@ import { ArrowRight, CheckCircle, Layout, Search, Calculator, Server } from "@/c
 export const metadata: Metadata = {
   title: "Services - Echo Web, LLC",
   description:
-    "CRO focused, SEO for organic visibility, resource pages, and hosting services for service-based businesses.",
+    "Professional Website Services: CRO Focused Websites.",
   openGraph: {
     title: "Services - Echo Web, LLC",
-    description: "Professional web design and SEO services that drive revenue.",
+    description: "Professional Website Services: CRO Focused Websites.",
     type: "website",
   },
 }

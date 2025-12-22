@@ -22,7 +22,7 @@ export default function AboutPage() {
           <div className="text-center">
             <h1 className="text-5xl font-semibold leading-tight text-foreground lg:text-6xl">About Echo Web</h1>
             <p className="mx-auto mt-6 max-w-2xl text-xl font-medium text-muted-foreground">
-              Your Organic Online Growth Partner
+              Your Online Growth Partner
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function AboutPage() {
               </div>
               <h3 className="mt-6 text-xl font-semibold text-foreground">Client Retention</h3>
               <p className="mt-3 text-base font-medium text-muted-foreground">
-                For ongoing clients: month-over-month growth in organic traffic, rankings, and conversion performance.
+                 Month-over-month growth in organic traffic, rankings, and conversion performance.
               </p>
             </div>
           </div>

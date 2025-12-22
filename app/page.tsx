@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Turn your website into a predictable revenue stream. We build and optimize websites to generate traffic and conversions.",
   openGraph: {
-    title: "Echo Web, LLC | Build Organic Revenue Channels for Your Business",
+    title: "Echo Web, LLC | Build Predictable Online Revenue for Your Business",
     description:
       "Turn your website into a predictable revenue stream. We build and optimize websites to generate traffic and conversions.",
     type: "website",
@@ -60,10 +60,10 @@ export default function HomePage() {
       // Nathan
     },
     {
-      slug: "boxing-training-client",
-      title: "Boxing Training Client Acquisition",
-      description: "Developed a website that drives a 150% increase in booked clients for boxing training services.",
-      image: "/boxing-training-website.jpg",
+      slug: "ecommerce-shopify-website",
+      title: "Ecommerce Website for a Pool Products Business",
+      description: "SEO and conversion optimization for a growing ecommerce business, increasing sales by 20% in the first quarter.",
+      image: "/Poolzilla.jpg",
       // Andrew (me)
     },
   ]
@@ -75,7 +75,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-white/25 p-10 rounded-3xl shadow-xl">
           <div className="text-center">
         <h1 className="text-balance text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-6xl">
-          Optimize sales or lead generation for your product or service
+          Optimize sales with our full suite of digital marketing services
         </h1>
         <p className="mx-auto mt-8 max-w-3xl text-balance text-xl leading-relaxed text-muted-foreground">
           We design and build websites that work with your systems using SEO and conversion-focused designs to generate an optimize sales and leads generation 
@@ -174,7 +174,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="rounded-3xl bg-card p-10 shadow-md border-1 border-gray-300 ring-1 ring-border/50 transition-all hover:shadow-xl">
-              <h3 className="text-2xl font-bold text-foreground">Organic visibility that lasts</h3>
+              <h3 className="text-2xl font-bold text-foreground"> Visibility that lasts</h3>
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 Strategic search positioning puts your business in front of qualified buyers at the exact moment they
                 need you. Sustainable traffic growth, not temporary spikes.
@@ -330,7 +330,7 @@ export default function HomePage() {
             <div>
               <h2 className="text-3xl font-bold text-primary-foreground">Ready to build your revenue generating website?</h2>
               <p className="mt-3 text-lg leading-relaxed text-primary-foreground/95">
-                Projects start at $5,000. Let's discuss how we can create predictable organic growth for your business.
+                Projects start at $5,000. Let's discuss how we can create predictable digital growth for your business.
               </p>
             </div>
             <div className="flex flex-col gap-3 xl:flex-row">

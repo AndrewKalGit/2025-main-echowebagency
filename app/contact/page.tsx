@@ -458,7 +458,7 @@ export default function ContactPage() {
                   What's included in your SEO services?
                 </AccordionTrigger>
                 <AccordionContent className="text-base font-medium text-muted-foreground">
-                  SEO services are available for onboarded clients only and include: keyword research, on-page SEO
+                  SEO services include: keyword research, on-page SEO
                   optimization, blog content strategy, local SEO setup, link building outreach, and monthly performance
                   reports. Pricing starts at $1,000/month with a 6-month minimum commitment.
                 </AccordionContent>

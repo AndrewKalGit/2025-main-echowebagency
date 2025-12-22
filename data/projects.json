@@ -70,7 +70,7 @@
   },
   {
     "slug": "ecommerce-store-redesign",
-    "title": "E-Commerce Store Redesign",
+    "title": "E-Commerce Store Redesign & SEO",
     "category": "E-Commerce",
     "client": "Online Boutique",
     "industry": "Retail & Fashion",
@@ -138,29 +138,29 @@
     "featured": true
   },
   {
-    "slug": "law-firm-website",
-    "title": "Law Firm Website & SEO",
+    "slug": "video-production-group",
+    "title": "Video Production Group Lead Generation & SEO",
     "category": "Professional Services",
-    "client": "Smith & Associates Law",
-    "industry": "Legal Services",
-    "year": "2023",
-    "image": "/placeholder.svg?height=600&width=1200&text=Law+Firm+Website",
-    "challenge": "The law firm had zero online presence and was relying entirely on referrals. They needed to establish credibility online and start generating qualified leads through organic search.",
-    "solution": "Built a professional, trustworthy website with practice area pages optimized for local search. Created an attorney bio section, case results page, and resource center with legal guides. Implemented comprehensive local SEO strategy.",
+    "client": "Miraezō Productions",
+    "industry": "Media & Entertainment",
+    "year": "2025",
+    "image": "/placeholder.svg?height=600&width=1200&text=Video+Production+Group",
+    "challenge": "The Media Group had zero online presence and was relying entirely on referrals. They needed to establish credibility online and start generating qualified leads through organic search.",
+    "solution": "Built a professional, trustworthy website optimized for search. Created an video portfolio, case results page, and resource center with video & media guides. Implemented comprehensive SEO strategy.",
     "process": {
       "design": [
         "Created professional brand identity and style guide",
-        "Designed practice area landing pages",
-        "Built attorney profile pages with expertise highlights",
+        "Designed servicing areas landing pages",
+        "Built portfolio pages with expertise highlights and strong CTAs",
         "Added client intake forms with smart routing",
         "Implemented accessibility features (WCAG 2.1 AA)"
       ],
       "seo": [
-        "Local SEO targeting practice areas in three counties",
-        "Created 20+ location + practice area landing pages",
+        "Local SEO targeting practice areas in three countries",
         "Optimized Google Business Profile",
-        "Built citations across 40+ legal directories",
-        "Implemented review generation system"
+        "Built relavant blog & content for media & entertainment industry",
+        "Set up Google Search Console & Analytics 4",
+        "Optimized Core Web Vitals for 95+ PageSpeed score"
       ]
     },
     "results": [
@@ -199,9 +199,9 @@
       "Hotjar for UX insights"
     ],
     "testimonial": {
-      "quote": "We went from invisible online to receiving multiple qualified leads every week. The ROI has been exceptional.",
-      "author": "Robert Smith",
-      "role": "Managing Partner"
+      "quote": "We went from invisible online to receiving multiple qualified producers & agencies reaching out to us every week. The ROI has been exceptional.",
+      "author": "Nathan Ryu",
+      "role": "Founder of Miraezō Productions"
     },
     "featured": false
   }

@@ -328,7 +328,7 @@ export default function OutreachPage() {
           <div className="text-center">
             <h2 className="text-4xl font-semibold text-[#2B3238]">Start your outreach campaign</h2>
             <p className="mx-auto mt-4 max-w-xl text-lg font-medium text-[#2B3238]/70">
-              SEO outreach is available only for onboarded clients. Already working with us? Let's discuss adding link
+              Build organic traffic through SEO outreach. Let's discuss adding link
               building to your strategy.
             </p>
           </div>

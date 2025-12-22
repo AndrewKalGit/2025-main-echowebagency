@@ -296,7 +296,7 @@ export default function BookingPage() {
                   <option value="service-page">Service Page</option>
                   <option value="appointment-booking">Appointment / Booking System</option>
                   <option value="landing-page">Landing Page</option>
-                  <option value="seo">SEO (Onboarded Clients Only)</option>
+                  <option value="seo">SEO</option>
                   <option value="full-website">Full Website</option>
                   <option value="mini-webapp">eCommerce</option>
                 </select>

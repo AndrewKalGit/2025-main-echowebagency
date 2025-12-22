@@ -15,7 +15,7 @@ export default function Footer() {
               <Image src={logo} alt="Echo Web" width={120} height={40} className="h-10 w-auto" />
             </Link>
             <p className="mt-4 text-sm font-medium text-muted-foreground">
-              Building organic revenue channels for businesses with websites that convert.
+              Building revenue channels for businesses with websites that convert.
             </p>
           </div>
           <div>
