@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Turn your website into a predictable revenue stream. We build and optimize websites to generate traffic and conversions.",
   openGraph: {
-    title: "Echo Web, LLC | Build Predictable Online Revenue for Your Business",
+    title: "Echo Web, LLC | Optimize your conversion rates and drive more sales with our digital marketing services.",
     description:
       "Turn your website into a predictable revenue stream. We build and optimize websites to generate traffic and conversions.",
     type: "website",
