@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, CheckCircle, Code, TrendingUp, Zap } from "@/components/icons"
 
+// Todo: Finish 3 blogs day one and 4 blogs day two 12/23/2025 and 12/24/2025-12/25/2025
+
 export const metadata: Metadata = {
   title: "Echo Web,LLC | Digital Marketing Agency Specializing in SEO, Web Design, and Conversion Optimization.",
   description:
@@ -47,7 +49,7 @@ export default function HomePage() {
   const portfolioHighlights = [
     {
       slug: "fitness-coach-website",
-      title: "Fitness Clientele Building System",
+      title: "Fitness Clientele Building",
       description: "Created a digital channel that consistently generates 240% more consultation bookings.",
       image: "/fitness-coach-website.jpg",
       // Yoku
@@ -57,21 +59,21 @@ export default function HomePage() {
       title: "Creative Media Production Group Growth",
       description: "Transforemed their website that now brings in 4x more organic traffic every month.",
       image: "/real-estate-website-hero.png",
-      // Nathan
+      // Andrew (me)
     },
     {
       slug: "ecommerce-shopify-website",
       title: "Ecommerce Website for a Pool Products Business",
       description: "SEO and conversion optimization for a growing ecommerce business, increasing sales by 20% in the first quarter.",
       image: "/Poolzilla.jpg",
-      // Andrew (me)
+      // Mark
     },
   ]
 
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-white via-blue-100/80 to-blue-200/70 py-32">
+      <section className="bg-gradient-to-br from-white via-blue-100/80 to-blue-200/70  py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-white/25 p-10 rounded-3xl shadow-xl">
           <div className="text-center">
         <h1 className="text-balance text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-6xl">
@@ -94,7 +96,7 @@ export default function HomePage() {
            Book Directly for a Consultation
             <ArrowRight className="h-5 w-5" />
           </Link>
-        </div>
+        </div> 
           </div>
         </div>
       </section>

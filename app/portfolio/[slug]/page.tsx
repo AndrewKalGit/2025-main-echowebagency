@@ -269,7 +269,7 @@ export default async function PortfolioCaseStudy({ params }: PortfolioCaseStudyP
       {/* CTA Section */}
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-gradient-to-b from-[#F3F6F8] to-white p-12 text-center">
+          <div className="p-12 text-center">
             <h2 className="text-3xl font-semibold text-[#2B3238]">Ready for results like these?</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-[#2B3238]/70">
               Let's discuss how we can grow your online revenue with CRO-first design and strategic SEO.

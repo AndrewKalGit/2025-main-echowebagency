@@ -6,6 +6,8 @@ import { ArrowRight, Filter } from "@/components/icons"
 import Footer from "@/components/Footer"
 import projectsData from "@/data/projects.json"
 
+// Todo: Make 3 projets and case studies for them and add them to the projects.json file 12/23/2025 due: 12/27/2025
+
 // Define the project type
 interface Project {
   slug: string

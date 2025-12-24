@@ -7,6 +7,11 @@ import { usePathname } from "next/navigation"
 import { useState, useEffect, useRef } from "react"
 
 export default function Header() {
+// Todo = add a megadropdown for the services page 12/23/2025 due: 12/27/2025
+// Have the megadropdown have a image block that exmplifies the service and a short description of the service
+// Break it into 2 columns with 2 image blocks that link to the project that exmplifies the service the general Web Design SEO and maintenance and
+// The other column for the fitness industry digital marketing service
+
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
@@ -114,11 +119,11 @@ export default function Header() {
                     Maintenance
                   </Link>
                   <Link
-                    href="/outreach"
+                    href="/Fitness"
                     onClick={() => setServicesOpen(false)}
                     className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-gray-100 hover:text-primary transition-colors"
                   >
-                    Link Building (SEO)
+                    Digital Marketing for Fitness Industry
                   </Link>
                 </div>
               )}
@@ -224,13 +229,13 @@ export default function Header() {
                 >
                   Maintenance
                 </Link>
-                <Link
-                  href="/outreach"
-                  onClick={closeMobileMenu}
-                  className="block px-4 py-1.5 text-sm text-foreground/80 hover:text-primary hover:bg-gray-50 rounded-lg transition-colors"
-                >
-                  Link Building (SEO)
-                </Link>
+                 <Link
+                    href="/Fitness"
+                    onClick={() => setServicesOpen(false)}
+                    className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-gray-100 hover:text-primary transition-colors"
+                  >
+                    Digital Marketing for Fitness Industry
+                  </Link>
               </div>
             </div>
             <Link

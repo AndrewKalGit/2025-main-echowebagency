@@ -21,7 +21,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl font-semibold leading-tight text-[#2B3238] lg:text-6xl">
-              Create Revenue Funnels With SEO and Conversion Focused Web Design
+              Optimize Revenue With SEO and Conversion Focused Web Design
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-xl font-medium text-[#2B3238]/70">
               Professional web services that transform visitors into revenue. No guesswork, just results.
@@ -161,6 +161,23 @@ export default function ServicesPage() {
                   View full pricing <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
+                <div className="rounded-2xl bg-[#F3F6F8] p-8 p-8 border-gray-300 border-2">
+                <h3 className="text-xl font-semibold text-[#2B3238]">Our Base Website Stack</h3>
+                <p className="mt-3 text-base font-semibold text-[#2B3238]">
+                  Shopify & Next.js
+                </p>
+                <div className="mt-3 flex gap-3">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-sm bg-[#96BE4E]">
+                    <span className="text-sm font-bold text-white">Shopify</span>
+                  </div>
+                  <div className="flex h-16 w-16 items-center justify-center rounded-sm bg-black">
+                    <span className="text-sm font-bold text-white">Next.js</span>
+                  </div>
+                </div>
+                <p className="mt-2 text-sm font-medium text-[#2B3238]/80">
+                  Shopify for e-commerce, Next.js for non e-commerce sites
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -174,7 +191,7 @@ export default function ServicesPage() {
               <Search className="h-8 w-8 text-[#2EA8F7]" />
             </div>
             <div className="flex-1">
-              <h2 className="text-4xl font-semibold text-[#2B3238]">SEO for Onboarded Clients</h2>
+              <h2 className="text-4xl font-semibold text-[#2B3238]">SEO for Conversions</h2>
               <p className="mt-4 text-lg font-medium text-[#2B3238]/70">
                 Strategic SEO services exclusively for our web design clients. We build your site, then help you
                 dominate search results.
@@ -278,8 +295,8 @@ export default function ServicesPage() {
               <Calculator className="h-8 w-8 text-[#2EA8F7]" />
             </div>
             <div className="flex-1">
-              <h2 className="text-4xl font-semibold text-[#2B3238]">Resource Pages & Mini Web Apps</h2>
-              <h3 className="text-2xl font-semibold text-[#2B3238]">(Generally for Onboarded Clients)</h3>
+              <h2 className="text-4xl font-semibold text-[#2B3238]">Custom Mini Web Apps for SEO & CRO</h2>
+              <h3 className="text-2xl font-semibold text-[#2B3238]">(Assists with genearting traffic and conversion)</h3>
               <p className="mt-4 text-lg font-medium text-[#2B3238]/70">
                 Interactive tools and calculators that provide value to visitors, build trust, and attract organic
                 backlinks.

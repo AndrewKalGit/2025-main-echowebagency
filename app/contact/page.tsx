@@ -315,9 +315,9 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div className="rounded-2xl bg-secondary p-8">
-                <h3 className="text-2xl font-semibold text-foreground">Prefer to book directly?</h3>
+                <h3 className="text-2xl font-semibold text-foreground">Know what you need?</h3>
                 <p className="mt-3 text-base font-medium text-muted-foreground">
-                  Skip the form and schedule a consultation call right away.
+                  Get a head start on your project and get a free consultation.
                 </p>
                 <Link
                   href="/booking"

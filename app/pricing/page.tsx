@@ -48,7 +48,7 @@ export default function PricingPage() {
               <div className="mt-8">
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-semibold text-[#2EA8F7]">$5,000</span>
-                  <span className="text-base font-medium text-[#2B3238]/70">starting price</span>
+                  <span className="text-base font-medium text-[#2B3238]/70"> (starting price)</span>
                 </div>
               </div>
 
@@ -164,8 +164,8 @@ export default function PricingPage() {
             <div className="rounded-2xl border-2 border-gray-400 bg-white p-8 shadow-lg">
               <div className="flex items-start justify-between">
                 <div>
-                  <h2 className="text-3xl font-semibold text-[#2B3238]">SEO Services</h2>
-                  <p className="mt-2 text-base font-medium text-[#2B3238]/70">Build organic traffic through SEO</p>
+                  <h2 className="text-3xl font-semibold text-[#2B3238]">SEO & CRO Ongoing Services</h2>
+                  <p className="mt-2 text-base font-medium text-[#2B3238]/70">Continue building traffic & optimizing site for conversions</p>
                 </div>
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F3F6F8]">
                   <Zap className="h-6 w-6 text-[#2B3238]" />
@@ -175,7 +175,7 @@ export default function PricingPage() {
               <div className="mt-8">
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-semibold text-[#2B3238]">$1,000</span>
-                  <span className="text-base font-medium text-[#2B3238]/70">per month</span>
+                  <span className="text-base font-medium text-[#2B3238]/70"><span className="text-base font-semibold text-gray-900">per month</span> (starting price) </span>
                 </div>
               </div>
 
@@ -468,12 +468,12 @@ export default function PricingPage() {
                 Book a Consultation
                 <ArrowRight className="h-5 w-5" />
               </Link>
-              <Link
+              {/* <Link
                 href="/resources"
                 className="inline-flex items-center gap-2 rounded-2xl border-2 border-white px-8 py-4 text-base font-semibold text-white hover:bg-white hover:text-[#2EA8F7]"
               >
                 Get Free Resources
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

@@ -28,14 +28,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services#seo" className="text-sm font-medium text-muted-foreground hover:text-primary">
-                  SEO
+                  Ongoing SEO & CRO
                 </Link>
               </li>
               <li>
                 <Link href="/services#hosting" className="text-sm font-medium text-muted-foreground hover:text-primary">
                   Hosting & Maintenance
                 </Link>
-              </li>
+              </li>             
             </ul>
           </div>
           <div>
